@@ -1,0 +1,35 @@
+1.5 Preencha as lacunas em cada uma das seguintes afirmações:
+
+a) A linguagem de programação JAVA é agora utilizada para desenvolver aplicativos corporativos
+de grande porte, aprimorar a funcionalidade de servidores web, fornecer aplicativos a 
+dispositivos de consumo popular e para muitos outros propósitos.
+
+    Um dos principais objetivos da linguagem Java é a portabilidade de código, que permite que
+    o código seja escrito uma vez e seja executado em qualquer plataforma (serviodres, desktops,
+    celulares e embarcados). 
+    
+    Isso é possível graças à Java Virtual Machine (JVM), pois todo código Java é convertido em 
+    bytecode quando compilado, o bytecode de um programa será sempre o mesmo, independente da 
+    plataforma em que o código foi escrito. 
+    
+    A JVM, ao executar esse código, passa as instruções para o Sistema Operacional (SO), que 
+    manipula os recursos com instruções específicas da plataforma.
+
+b) Inicialmente, o C tornou-se muito conhecido como a linguagem de desenvolvimento do sistema operacional UNIX.
+
+    O C, assim como o UNIX foi desenvolvido pela Bell Laboratories, naturalmente C seria a escolha óbvia.
+
+c) O PROTOCOLO TCP garante que as mensagens, que consistem em partes sequencialmente 
+numeradas chamadas bytes, sejam adequadamente encaminhadas do emissor para o receptor, 
+cheguem intactas e sejam montadas na ordem correta.
+
+    o Protocolo TCP consiste num conjunto de regras de sinalização implementada entre dois sistemas que se 
+    comunicam através de uma rede de dados e tem como objetivo garantir que as mesangens envidas foram 
+    recebidas de forma íntegra.
+
+d) a lingageum de programação C++ foi desenvolvida por Bjarne Stroustrup no início dos anos 1980 na Bell Laboratories.
+
+    C++, assim como a linaguagem C, ainda permanece relevante até os dias de hoje. C++ trouxe novas funcionalidades à
+    Lingaugem C, a principal delas sem dúvidas foi a Orientação à Objetos.
+
+    

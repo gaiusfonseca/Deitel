@@ -65,7 +65,7 @@ i) A única linguagem que um computador pode entender diretamente é a LINGUAGEM
 
     As linguagens podem classificadas genericamente em: de Máquinas, Assembly e de Alto Nível.
 
-    Linguagens de máquinas: são strings de números e representam um código diretamente 
+    Linguagens de Máquinas: são strings de números e representam um código diretamente 
     entendido pelos computadores, mas não por humanos. Esse código deve ser específico 
     para cada arquitetura de computador. O processo de programação com essas linguagens
     tende a ser lento e tedioso.
