@@ -1,0 +1,83 @@
+1.4 Preencha as lacunas em cada uma das seguintes afirmações:
+
+a) A unidade lógica que recebe informações de fora do computador para uso por ele é a UNIDADE DE ENTRADA.
+
+    Um computador pode ser dividido em 6 unidades lógicas: Unidade Lógica de Entrada, Unidade Lógica de Saída, 
+    Unidade de Processamento Central (CPU), Unidade de Lógica e Aritmética (ALU), Memória Princial (RAM) e 
+    Memória Secundária (HDD).
+
+    Unidade Lógica de Entrada - representa todos os meios pelos quais um computador é capaz de 
+    capturar dados (teclado, mouse, dispositivos USB, leitores de discos, etc.).
+
+b) O processo de instrução do computador para resolver um problema específico é chamado PROGRAMAÇÃO
+
+c) ASSEMBLY é um tipo de linguagem de computador que utiliza abreviações em inglês para instruções de linguagem de máquina.
+    Assembly é um tipo de linguagem de programação enquanto que Assemblers são os programas que convertem Assembly em lingaugem de máquina
+
+d) UNIDADE LÓGICA DE SAÍDA é uma unidade lógica que envia informações que já foram processadas 
+pelo computador para vários dispositivos, de modo que possam ser utilizadas fora da máquina.
+
+    Um computador pode ser dividido em 6 unidades lógicas: Unidade Lógica de Entrada, Unidade Lógica de Saída, 
+    Unidade de Processamento Central (CPU), Unidade de Lógica e Aritmética (ALU), Memória Princial (RAM) e 
+    Memória Secundária (HDD).
+
+    Unidade Lógica de Saída - representa todos os meios pelos quais um computador pode enviar 
+    dados para o ambiente (monitor, alto falantes, impressões, etc.).
+
+e) MEMÓRIA PRINCIPAL e MEMÓRIA SECUNDÁRIA são unidades lógicas do computador que retêm informações.
+
+    Um computador pode ser dividido em 6 unidades lógicas: Unidade Lógica de Entrada, Unidade Lógica de Saída, 
+    Unidade de Processamento Central (CPU), Unidade de Lógica e Aritmética (ALU), Memória Princial (RAM) e 
+    Memória Secundária (HDD).
+
+    Memória Princial (RAM) - Memória de alta velocidade e volátil nas quais são carregadas as 
+    informações que devem ficar disponíveis para os programas em execução.
+
+    Memória Secundária (HDD) - Memória de baixa velocidade, de custo inferior, muito utilizada 
+    para persistir dados que não são acessados a todo momento.
+
+f) UNIDADE DE LÓGICA E ARITMÉTICA é uma unidade lógica do computador que realiza cálculos.
+
+    Um computador pode ser dividido em 6 unidades lógicas: Unidade Lógica de Entrada, Unidade Lógica de Saída, 
+    Unidade de Processamento Central (CPU), Unidade de Lógica e Aritmética (ALU), Memória Princial (RAM) e 
+    Memória Secundária (HDD).
+
+    Unidade de Lógica e Aritmética (ALU) - responsável por executar os cálculos aritméticos e 
+    lógicos, na prática é implementada dentro da CPU.
+
+g) UNIDADE DE LÓGICA E ARITMÉTICA é uma unidade lógica do computador que toma decisões lógicas.
+
+    Um computador pode ser dividido em 6 unidades lógicas: Unidade Lógica de Entrada, Unidade Lógica de Saída, 
+    Unidade de Processamento Central (CPU), Unidade de Lógica e Aritmética (ALU), Memória Princial (RAM) e 
+    Memória Secundária (HDD).
+
+    Unidade de Lógica e Aritmética (ALU) - responsável por executar os cálculos aritméticos e 
+    lógicos, na prática é implementada dentro da CPU.
+
+h) As linguagens mais convenientes para que o programador escreva programas rápida e facilmente são as LINGUAGENS DE ALTO NÍVEL.
+
+    As linguagens podem classificadas genericamente em: de Máquinas, Assembly e de Alto Nível.
+
+    Linguagens de Alto Nível: são linguagens similares ao inglês literal. O código é
+    mais portável e o processo de programação é significativamente mais rápido.
+
+i) A única linguagem que um computador pode entender diretamente é a LINGUAGEM DE MÁQUINA dele.
+
+    As linguagens podem classificadas genericamente em: de Máquinas, Assembly e de Alto Nível.
+
+    Linguagens de máquinas: são strings de números e representam um código diretamente 
+    entendido pelos computadores, mas não por humanos. Esse código deve ser específico 
+    para cada arquitetura de computador. O processo de programação com essas linguagens
+    tende a ser lento e tedioso.
+
+    Linguagens Assembly: utilizam abreviações em inglês para substituir as operações 
+    elementares,o código ainda deve ser específico para cada plataforma. 
+    O processo de programação é mais rápido, mas ainda é lento.
+
+j) é uma unidade lógica do computador que coordena as atividades de todas as outras unidades lógicas.
+
+    Um computador pode ser dividido em 6 unidades lógicas: Unidade Lógica de Entrada, Unidade Lógica de Saída, 
+    Unidade de Processamento Central (CPU), Unidade de Lógica e Aritmética (ALU), Memória Princial (RAM) e 
+    Memória Secundária (HDD).
+
+    Unidade de Processamento Central (CPU) - coordena todas as demais unidade lógicas.
