@@ -1,0 +1,56 @@
+1.6 Preencha as lacunas em cada uma das seguintes afirmações:
+
+a) Os programas Java normalmente passam por cinco fases: EDIÇÃO, COMPILAÇÃO, CARREGAMENTO, VERIFICAÇÃO e EXECUÇÃO.
+
+    Edição - Nessa fase o programador utiliza um editor de texto, editor de código ou IDE 
+    para escrever o programa em lingaugem Java.
+
+    Compilação - Após escrever o código o mesmo deve ser compilado usando o compilador Java (javac) 
+    diretamente no temrinal ou através da sua IDE. Nessa etapa o código Java é convertido em bytecode.
+
+    Carregamento - Durante o carregamento o bytecode é carregado na memória para que o programa fique 
+    disponível para a JVM.
+
+    Verificação - Na fase de verificação o bytecode é inspecionado em busca de erros e
+    se nenhum erro de compilação for encontrado, o programa segue para a execução.
+
+    Execução - Uma vez que o programa inicia a execução, a JVM fará as chamadas para o a máquina Host e 
+    executará as ações que eram esperadas se nenhum erro de tempo de execução for encontrado.
+
+b) Uma IDE fornece muitas ferramentas que suportam o processo de desenvolvimento de software, como editores para 
+escrever e editar programas, depuradores a fim de localizar erros de lógica em programas e muitos outros recursos.
+
+    IDE - Integrated Development Environment é uma alternativa mais robusta ao editor de texto e editor de código, 
+    a principal vantagem é que a maior parte das ferramentas que o desenvolvedor pode vir a precisar já estão 
+    presentes nesse ambiente e isso os ajuda a ter mais produtividiade. 
+    As principais IDEs para a linaguagem Java são: Netbeans, Eclipse e Intellij Idea.
+
+c) o comando "java" invoca a JVM, que executa programas Java.
+
+    O comando java e javac podem ser utilizados diretamente no temrinal do sistema operacional desde que tenha sido 
+    instalado um JDK e as variáveis de ambiente (PATH e CLASSPATH) tenham sido corretamente configuradas. 
+    O comando java invoca a Java Virtual Machine (JVM), enquanto que o comando javac invoca o compilador java, 
+    que irá converter o código Java em bytecode (arquivos .java em .class).
+
+d) Um(a) MÁQUINA VIRUTAL é um aplicativo de software que simula um computador, mas oculta o sistema operacional e o 
+hardware subjacentes dos programas que interagem com ela(e).
+
+    O uso de uma máquina virtual (JVM) é um dos trunfos da linguagem Java para implementar o paradigma "escreva uma 
+    vez, execute em qualquer lugar". Java é conhecida por ser uma lingaugem portável e isso é possível porque um
+    programa Java, ao ser compilado, resultará sempre no mesmo bytecode, independente da plataforma em que o código
+    foi compilado. Como consequência disso a JVM executará o bytecode e fará as solicitaçoes para o  Sistema operacional
+    em que está hospedada.
+
+e) UML é uma lingagem gráfica que permite às pessoas que projetam sistemas de software utilizar uma notação padrão da 
+indústria para representá-las.
+
+    Unified Modeling Language (UML) acabou se tornando uma ferramenta padrão para que os desenvolvedores possam 
+    representar um sistema de software graficamente. Na UML é possível representar as Classes, os seus atributos,
+    métodos, as relações entre as Classes, etc.
+
+f) O VERIFICADOR DE BYTECODE examina bytecodes para assegurar que eles são válidos.
+
+    O Verificador de Bytecode, responsável pela quarta etapa do ciclo de vida de um programa Java (verificação),
+    além de verificar se o bytecode é válido, também verifica se nenhuma diretriz de segurança foi violada, isso
+    é feito para evitar que programas que  chegam pela rede não danifiquem os arquivos ou sistemas.
+
