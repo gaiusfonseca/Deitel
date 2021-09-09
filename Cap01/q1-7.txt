@@ -1,0 +1,6 @@
+1.7 Explique as duas fases de compilação de programas Java.
+
+    Durante a primeira fase de compilação o código Java é convertido em bytecode. 
+    A Segunda etapa de compilação acontece durante a fase de execução, quando a JVM 
+    identifica os trechos de código mais utilizados e os compila novamente, dessa vez, 
+    de bytecode para a lingaugem da máquina hospedeira.
