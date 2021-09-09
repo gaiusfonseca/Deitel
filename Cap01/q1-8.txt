@@ -1,0 +1,26 @@
+1.8 Um dos objetos mais comuns do mundo é um relógio de pulso. Discuta como cada um dos seguintes termos e conceitos se 
+aplciam à noção de um relógio: objeto, atributos, comportamentos, classe, herança (considere, por exemplo, o alarme 
+dele), modelagem, mensagens, encapsulamento, interface e ocultamento de informações.
+
+    Um relógio de pulso, assim como qualquer outro conceito, pode ser transportado para um modelo na linguagem Java, para
+    o qual podemos fazer as seguintes analogias:
+
+    Uma Classe RelogioDePulso detalharia todas as características e comportamentos comuns a todos os relógios de pulsos.
+    As características do relógio seriam os atributos da classe, enquanto que os comportamentos seriam os méotodos da
+    classe. No entanto, a classe representa apenas o conceito de um relógio de pulso, pois na prática, sabemos que existem
+    vários exemplares diferentes de relógios de pulso. Cada um desses exemplares seria um objeto da Classe RelogioDePulso.
+
+    Através da Herança podemos criar conceitos mais especializados, ou seja, poderíamos ter a Classe RelogioDigital, que
+    herda todas as suas características comuns de um relógio de pulso da classe RelogioDePulso, mas acrescenta um méotodo
+    adicional, o dispararAlarme, que é um comportamento específico dos relógios digitais.
+
+    Apesar de os objetos instanciados a partir dessas duas classes serem objetos distintos, ambos compartilham a interface
+    de um relógio de pulso, isto é, todos os comportamentos comuns aos relógios de pulso estarão presentes em ambos os 
+    objetos.
+
+    Assim como na vida real utilizamos os objetos sem saber exatamente como eles funcionam, os Objetos aplicam o conceito
+    de encapsulamento para esconder do usuário a implementação dos métodos, ou seja, com a orientação a objetos, não 
+    precisamos saber como os objetos implementam os métodos, precisamos apenas saber como chamá-los corretamente e o que
+    cada um deles deve retornar.
+
+
