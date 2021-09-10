@@ -1,0 +1,23 @@
+1.12 Muitas pessoas querem eliminar o machismo em todas as formas de comunicação. Solicitaram a você que criasse um
+programa que pudesse processar um parágrafo de um texto e substituir palavras definidoras de gênero por outras neutras.
+Supondo que você recebeu uma lista de termos específicos quanto a gênero e seus equivalentes neutros (por exemplo,
+substituir "wife" e "husband" por "spouse", "man" e "woman" por "person", "daughter" e "son" por "child"), explique o 
+procedimento que usaria para examinar um parágrafo e fazer manualmente as substituições. Como essa tarefa pode gerar um
+termo estranho como "woperchild"? Você aprenderá que uma palavra mais formal para "procedimento" é "algoritmo", e que um 
+estabelece os passos a serem executados e a ordem na qual eles acontecem. Mostraremos como desenvolver algoritmos e então
+convertê-los em programas Java que podem ser executados em computadores.
+
+    primeiramente começaria definindo uma lista das palavras que devem ser substituídas e mapearia a palavra 
+    correspondente com gênero neutro para cada uma dessas entradas.
+
+    Depois estabeleceria um procedimento que verifica palavra por palavra, se a palavra atual é uma das que deve ser 
+    substituída. Se sim, efetuo a substituição. Caso contrário, segue para a próxima palavra.
+
+    Dependendo da implementação do método que verifica a palavra podemos ter substituições indevidas. Supondo que o 
+    programa está procurando por ocorrências do  termo "son" e que temos no texto a palavra "woperson", o programa 
+    registraria um match e terminaríamos com uma saída esquisita como "woperchild".
+
+    Para que o programa seja implementado corretamente, é necessário verificar se o match ocorreu em um termo que é uma
+    palavra isolada, para isso, precisamos verificar se o termo que precede o match é um espaço vazio e se o seu 
+    subsequente é caracter de pontuação ou espaço. Se ambas as condições forem satisfeitas, então de fato se trata de uma
+    das palavras que estamos procurando e poderemos efetuar a substituição com segurança.
