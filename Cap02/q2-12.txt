@@ -1,0 +1,61 @@
+2.12 Dado que y = ax³ + 7, quais das seguintes  alternativas são instruções Java corretas para essa equação?
+
+    Sabendo que em Java os operadores multiplicativos (*, /, %) têm prioridade sobre os operadores associativos (+, -) e
+    ainda que os parênteses tem precedência sobre qualquer operador, vamos desenvolver as expressões
+
+a) y = a * x * x * x + 7;
+
+    1 - executar primeiro os operadores multiplicativos da esquerda para a direita
+    ax³ + 7
+
+    verificamos que essa expressão aritmética em Java é equivalente.
+
+b) y = a * x * x * (x + 7);
+
+    1 - Executar os parênteses
+    y = a * x * x * (x + 7);
+
+    2 - executar as multiplicações da esquerda para a direita.
+    ax³ + 7ax²
+
+    verificamos que essa expressão não é equivalente.
+
+c) y = (a * x) * x * (x +7);
+
+    1 - Executar os parênteses.
+    ax * x * (x + 7)
+
+    2 - Executar as multiplicações da esquerda para a direita.
+    ax³ + 7ax²
+
+    verificamos que essa expressão não é equivalente.
+
+d) y = (a * x) * x * x + 7
+
+    1 - Executar os parênteses.
+    ax * x * x + 7
+
+    2 - Executar as multiplicações da esquerda para a direita.
+    ax³ + 7
+
+    verificamos que essa expressão aritmética em Java é equivalente.
+
+e) y = a * (x * x * x) + 7
+
+    1 - Executar os parênteses.
+    a * x³ + 7
+
+    2 - Executar as multiplicações.
+    ax³ + 7
+
+    verificamos que essa expressão aritmética em Java é equivalente.
+
+f) y = a * x * (x * x + 7)
+
+    1 - Executar os parênteses.
+    a * x * (x² + 7)
+
+    2 - Executar as multiplicações da esquerda para a direita.
+    ax³ + 7ax
+
+    verificamos que essa expressão não é equivalente.
