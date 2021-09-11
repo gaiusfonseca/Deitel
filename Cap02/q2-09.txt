@@ -1,0 +1,27 @@
+2.9 Determine se cada uma das seguuintes afirmações é verdadeira ou falsa. Se falsa, explique por quê.
+
+a) Operadores Java são avaliados da esquerda para a direita.
+    
+    Falso. Operadores são avaliados conforme a ordem de prioridade e se dois ou mais operadores tiverem a mesma 
+    prioridade, aí sim a expressão será avaliada da esquerda para a direita.
+
+    Os operadores Java obedecem a seguinte ordem de prioridade: primeiro os operadores multiplicativos (*, /, %), depois
+    os operadores associativos (+, - ), depois os operadores relacionais (<, >, <=, >=), depois os de igualdade (==, !=)
+    e por fim o de atribuição (=).
+
+b) os seguintes nomes são todos de variável válidos: _under_bar_, m928134, t5, j7, her_sales$, his_$account_total, a, 
+b$, c, z e z2.
+
+    Verdadeiro. Todas as variáveis iniciam com uma letra. O identificador de uma variável não pode começar com um número
+    nem conter espaços em branco.
+
+c) Uma expressão aritmética Java válida sem parênteses é avaliada da esquerda para a direita.
+
+    Falso. Uma expressãoa artimética Java será avaliada conforme a ordem de prioridade dos operadores que aparecem na 
+    expressão, se todos eles tiverem o mesmo nível de prioridade, aí sim a expressão será avaliada da esquerda para a 
+    direita.
+
+d) Os seguintes nomes são todos de variável inválidos: 3g, 87, 67h2, h22 e 2h.
+
+    Falso. Apenas o h22 é uma variável válida todos os outros identificadores começam com um dígito, o que não é 
+    permitido na linguagem Java.
