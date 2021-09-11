@@ -9,7 +9,7 @@ public class Shapes{
 
     /*
         com as técnicas que foram ensinadas no livro até o momento, não será possível escrever o programa de maneira 
-        eficiente, ainda assim, podemos algumas medidas para planejar a tarefa:
+        eficiente, ainda assim, podemos tomar algumas medidas para planejar a tarefa:
 
         1 - como não há variação de caracteres, ou seja, apenas asteriscos e espaços são utilizados para formar o 
         desenho, sabemos que podemos utilizar uma instrução print ou println. Nesse caso adotaremos a instrução println,

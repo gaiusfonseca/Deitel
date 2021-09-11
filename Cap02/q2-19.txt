@@ -1,0 +1,10 @@
+2.19 O que o seguinte código imprime?
+System.out.printf("*%n**%n***%n****%n*****%n");
+
+    O código imprime triângulo reto (ou escada) com a dimensão da altura alinhada a esquerda do console, vejamos:
+    *
+    **
+    ***
+    ****
+    *****
+    
