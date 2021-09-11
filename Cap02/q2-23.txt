@@ -1,0 +1,15 @@
+2.23 O que o seguinte código imprime?
+System.out.printf("%s%n%s%n%s%n", "*", "**", "*****");
+
+    foi utilizada uma instrução printf que permite determinar formatos específicos de impressão com base em marcadores,
+    neste caso foi utilizado o marcado %s e %n. 
+    
+    O marcador %s substitui uma string enquanto que o marcador %n substitui um caractere de nova linha, sendo assim,
+    a saída fica no seguinte formato:
+
+    *
+    **
+    *****
+
+    o primeiro %s, será substituído pelo primeiro argumento após a vírgula, no caso '*'. Podemos utilizar esse 
+    raciocínio para os demais também.
