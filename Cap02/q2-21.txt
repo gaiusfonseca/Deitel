@@ -1,0 +1,15 @@
+2.21 O que o seguinte código imprime?
+
+System.out.print("*");
+System.out.print("***");
+System.out.print("*****");
+System.out.print("****");
+System.out.println("**");
+
+    Nesse código foi utilizado a instrução print, fazendo com que o cursor não seja posicionado no começo da próxima
+    linha, portanto, os caracteres serão todos preenchidos em sequência. A instrução println não quebra esse padrão pois
+    como foi usado na ultima linha e ela só reposiciona o cursor no começa da próxima linha após ter impresso no 
+    terminal, todos os asteriscos serão impressos em uma única linha:
+
+    ***************
+    
