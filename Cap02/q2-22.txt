@@ -1,0 +1,25 @@
+2.22 O que o seguinte código imprime?
+System.out.print("*");
+System.out.println("***");
+System.out.println("*****");
+System.out.print("****");
+System.out.println("**");
+
+    Nesse código devemos nos atentar as instruções println, pois são elas que reposicionam o cursor na próxima linha, 
+    para facilitar a visualização, vamos agrupar as instruções:
+
+    System.out.print("*");          //imprime um caractere
+    System.out.println("***");      //imprime três caracteres e reposiciona o cursor na próxima linha
+    ****                            //essa é a saída deste bloco de código
+
+    System.out.println("*****");    //imrpime 5 caracteres e reposiciona o cursor na próxima linha
+    *****                           //essa é a saída deste bloco de código
+
+    System.out.print("****");       //imprime quatro caracteres e não reposiciona o cursor
+    System.out.println("**");       //imprime dois caracteres e reposiciona o cursor na próxima linha
+    ******                          //essa é a saída deste bloco de código
+
+    agrupando as três saídas temos o seguinte desenho:
+    ****
+    *****
+    ******
