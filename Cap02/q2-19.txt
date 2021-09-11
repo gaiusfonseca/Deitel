@@ -1,6 +1,9 @@
 2.19 O que o seguinte código imprime?
 System.out.printf("*%n**%n***%n****%n*****%n");
 
+    A instrução printf, permite quebrar o texto em várias linhas com o marcador '%n', dessa forma, sempre que ele 
+    aparecer, os caracteres subsequentes serão impressos no começo da próxima linha. 
+    
     O código imprime triângulo reto (ou escada) com a dimensão da altura alinhada a esquerda do console, vejamos:
     *
     **

@@ -1,0 +1,16 @@
+2.20 O que o seguinte código imprime?
+System.out.println("*");
+System.out.println("***");
+System.out.println("*****");
+System.out.println("****");
+System.out.println("**");
+
+    A isntrução println reposiciona o cursor após imrpimir no console, fazendo que o próximo print se inicie em uma nova
+    linha, dessa forma uma figura semelhante a um triângulo equilátero cuja base está alinhada com o lado esquerdo do
+    console do terminal, vejamos:
+
+    *
+    ***
+    *****
+    ****
+    **
