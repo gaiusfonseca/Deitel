@@ -1,0 +1,37 @@
+2.13 Declare a ordem de avaliação dos operadores em cada uma das seguintes instruções Java e mostre o valor de x depois
+que cada instrução é realizada:
+
+    Vamos desenvolver as expressões:
+
+a) x = 7 + 3 * 6 / 2 - 1;
+
+    1 - executar primeiro os operadores multiplicativos, da esquerda para a direita.
+    1.1 x = 7 + 18 / 2 - 1
+    1.2 x = 7 + 9 - 1
+
+    2 - executar os operadores associativos da esquerda para a direita.
+    2.1 x = 16 - 1
+    2.2 x = 15
+
+b) x = 2 % 2 + 2 * 2 - 2 / 2;
+
+    1 - executar os operadores multiplicativos da esquerda para a direita.
+    1.1 x = 0 + 2 * 2 - 2 /2
+    1.2 x = 0 + 4 - 2 / 2
+    1.3 x = 0 + 4 - 1
+
+    2 - executar os operadores associativos da esquerda para a direita.
+    2.1 x = 4 - 1
+    2.2 x = 3
+
+c) x = (3 * 9 * (3 + (9 * 3 / (3))));
+
+    1 - executar os parênteses mais internos.
+    1.1 x = (3 * 9 * (3 + (9 * 3 / 3)));
+    1.2 x = (3 * 9 * (3 + (18 / 3)));
+    1.3 x = (3 * 9 * (3 + 6));
+    1.4 x = (3 * 9 * 9);
+
+    2 executar os operadores multiplicativos da esquerda para a direita.
+    2.1 x = (18 * 9);
+    2.2 x = 162;
