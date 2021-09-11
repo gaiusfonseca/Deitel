@@ -2,8 +2,17 @@
 
 a) p = i + j + k + 7;
 
+    Aqui temos uma operação de atribuição que associa uma expressão aritmética que altera o valor da variável p.
+
 b) System.out.println("variables whose values are modified");
+
+    Aqui temos um método de saída que imprime no console "variables whose values are modified". Nenhuma variável está
+    sendo alterada aqui.
 
 c) System.out.println("a = 5");
 
+    Aqui temo um método de saída que imprime no console "a = 5". nenhuma variável está sendo alterada aqui.
+
 d) value = input.nextInt();
+
+    Aqui temos uma operação de atribuição que altera o valor da variável value 
