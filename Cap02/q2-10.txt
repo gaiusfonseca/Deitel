@@ -1,0 +1,17 @@
+2.10 Supondo que x = 2 e y = 3, o que cada uma das instruções a seguir exibe?
+
+a) System.out.printf("x = %d%n", x);
+
+    x = 2 (move o cursor para a próxima linha).
+
+b) System.out.printf("Value of %d + %d is %d%n", x, x (x + x));
+
+    Value of 2 + 2 is 4 (move o cursor para a próxima linha).
+
+c) System.out.printf("x =");
+
+    x =
+
+d) System.out.printf("%d = %d%n", (x + y), (y + x));
+
+    5 = 5 (move o cursor para a próxima linha).
