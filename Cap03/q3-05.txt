@@ -1,0 +1,3 @@
+3.5 Qual é o objetivo da palavra-chave new? Explique o que acontece quando você a utiliza.
+
+    A palavra-chave new cria uma nova instância do Objeto especificado.
