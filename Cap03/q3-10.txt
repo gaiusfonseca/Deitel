@@ -1,0 +1,8 @@
+3.10 Explique por que uma classe pode fornecer um método set e um método get para uma variável de instância.
+
+    Uma classe pode utilizar os métodos de acesso (get e set) para ocultar do usuário as variáveis de instância. No caso
+    do método set, isso é útil para impor regras de validação sempre que tentarem alterar o valor da variável de 
+    instância, impedindo que ela seja configurada com um valor inválido.
+
+    Por outro lado, o método get permite retornar um valor que não necessariamente é o valor da variável de instância,
+    ou seja, um método get pode retornar uma classificação (String) a partir de uma variável numérica.
