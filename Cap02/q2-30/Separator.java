@@ -35,10 +35,10 @@ public class Separator{
         //o primeiro dígito está na casa da dezena de milhar, para achá-lo basta dividir por 10.000
         System.out.printf("%d   ", numero / 10000);
 
-        numero = numero % 10000;                        //atualiza o numero despresando o primeiro dígito
+        numero = numero % 10000;                        //atualiza o numero desprezando o primeiro dígito
         System.out.printf("%d   ", numero / 1000);      //imprime o segundo caractere
 
-        numero = numero % 1000;                         //atualiza o numero despresando o segundo dígito
+        numero = numero % 1000;                         //atualiza o numero desprezando o segundo dígito
         System.out.printf("%d   ", numero / 100);       //imprime o terceiro caractere
 
         numero = numero % 100;                          //atualiza o numero desprezando o terceiro dígito
