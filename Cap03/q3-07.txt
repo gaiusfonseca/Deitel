@@ -1,0 +1,3 @@
+3.7 Explique o propósito de uma variável de instância.
+
+    O propósito de uma variável de instância é guardar uma valor que é específico desta instância.
