@@ -1,0 +1,5 @@
+3.8 a maioria das classes precisa ser importada antes de ser usada em um aplicativo. Por que cada aplicativo pode 
+utilizar as classes System e String sem importá-las antes?
+
+    Isso é possível porque System e String estão definidas no pacote java.lang e as classes do pacote java.lang não
+    precisam serem importadas para que possam ser utilizadas.
