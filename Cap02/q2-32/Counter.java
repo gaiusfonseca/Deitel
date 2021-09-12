@@ -28,12 +28,12 @@ public class Counter{
             countPositivos = countPositivos + 1;    //incrementa o contador de positivos
         }
 
-        if(numero == 0){                    //verifica se é um valor positivo
-            countZeros = countZeros + 1;    //incrementa o contador de positivos
+        if(numero == 0){                    //verifica se é um valor igual a zero
+            countZeros = countZeros + 1;    //incrementa o contador de zeros
         }
 
-        if(numero < 0){                             //verifica se é um valor positivo
-            countNegativos = countNegativos + 1;    //incrementa o contador de positivos
+        if(numero < 0){                             //verifica se é um valor negativo
+            countNegativos = countNegativos + 1;    //incrementa o contador de negativos
         }
 
         //segundo número
@@ -44,12 +44,12 @@ public class Counter{
             countPositivos = countPositivos + 1;    //incrementa o contador de positivos
         }
 
-        if(numero == 0){                    //verifica se é um valor positivo
-            countZeros = countZeros + 1;    //incrementa o contador de positivos
+        if(numero == 0){                    //verifica se é um valor igual a zero
+            countZeros = countZeros + 1;    //incrementa o contador de zeros
         }
 
-        if(numero < 0){                             //verifica se é um valor positivo
-            countNegativos = countNegativos + 1;    //incrementa o contador de positivos
+        if(numero < 0){                             //verifica se é um valor negativo
+            countNegativos = countNegativos + 1;    //incrementa o contador de negativos
         }
 
         //terceiro número
@@ -60,12 +60,12 @@ public class Counter{
             countPositivos = countPositivos + 1;    //incrementa o contador de positivos
         }
 
-        if(numero == 0){                    //verifica se é um valor positivo
-            countZeros = countZeros + 1;    //incrementa o contador de positivos
+        if(numero == 0){                    //verifica se é um valor igual a zero
+            countZeros = countZeros + 1;    //incrementa o contador de zeros
         }
 
-        if(numero < 0){                             //verifica se é um valor positivo
-            countNegativos = countNegativos + 1;    //incrementa o contador de positivos
+        if(numero < 0){                             //verifica se é um valor negativo
+            countNegativos = countNegativos + 1;    //incrementa o contador de negativos
         }
 
         //quarto número
@@ -76,12 +76,12 @@ public class Counter{
             countPositivos = countPositivos + 1;    //incrementa o contador de positivos
         }
 
-        if(numero == 0){                    //verifica se é um valor positivo
-            countZeros = countZeros + 1;    //incrementa o contador de positivos
+        if(numero == 0){                    //verifica se é um valor igual a zero
+            countZeros = countZeros + 1;    //incrementa o contador de zeros
         }
 
-        if(numero < 0){                             //verifica se é um valor positivo
-            countNegativos = countNegativos + 1;    //incrementa o contador de positivos
+        if(numero < 0){                             //verifica se é um valor negativo
+            countNegativos = countNegativos + 1;    //incrementa o contador de negativos
         }
 
         //quinto número
@@ -92,12 +92,12 @@ public class Counter{
             countPositivos = countPositivos + 1;    //incrementa o contador de positivos
         }
 
-        if(numero == 0){                    //verifica se é um valor positivo
-            countZeros = countZeros + 1;    //incrementa o contador de positivos
+        if(numero == 0){                    //verifica se é igual a zero
+            countZeros = countZeros + 1;    //incrementa o contador de zeros
         }
 
-        if(numero < 0){                             //verifica se é um valor positivo
-            countNegativos = countNegativos + 1;    //incrementa o contador de positivos
+        if(numero < 0){                             //verifica se é um valor negativo
+            countNegativos = countNegativos + 1;    //incrementa o contador de negativos
         }
 
         //imprime os resultados
