@@ -1,0 +1,6 @@
+3.9 Explique como um programa pode usar a classe Scanner sem importá-la.
+
+    É possível utilizar qualquer classe fora do pacote java.lang sem ter que importá-la para isso basta utilizar a
+    qualificação completa da classe. No caso de Scanner por exemplo, deveríamos fazer a chamada da seguinte forma:
+
+    java.util.Scanner;
