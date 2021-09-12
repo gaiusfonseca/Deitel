@@ -1,0 +1,6 @@
+3.6 O que é um construtor padrão? Como as variáveis de instância de um objeto são inicializadas se uma classe tiver
+comente um construtor padrão?
+
+    Um construtor padrão é um construtor que é fornecido quando nenhum construtor é especificado no corpo da classe.
+    Ele incializa as variáveis de instância que sejam de tipos primitivos com valor 0 ou false (boolean) e as variáveis 
+    de instância de tipos por referência são sempre inicializadas com o valor null pelo construtor padrão.
