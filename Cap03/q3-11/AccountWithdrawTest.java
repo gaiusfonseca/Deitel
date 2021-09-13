@@ -47,5 +47,33 @@ public class AccountWithdrawTest {
         //exibe o saldo de cada objeto
         System.out.printf("%s saldo: R$ %.2f %n", account1.getName(), account1.getBalance());
         System.out.printf("%s saldo: R$ %.2f %n", account2.getName(), account2.getBalance());
+
+        //solicita ao usuário que informe um valor de retirada para o account1
+        System.out.print("informe o valor da retirada para o account1: ");
+        withdrawAmount = entrada.nextDouble();
+
+        //informa que está tentando retirar o valor da retirada do saldo da conta
+        System.out.printf("Retirando R$ %.2f do saldo de account1. %n", withdrawAmount);
+
+        //efetua a retirada
+        account1.withdraw(withdrawAmount);
+
+        //exibe o saldo de cada objeto
+        System.out.printf("%s saldo: R$ %.2f %n", account1.getName(), account1.getBalance());
+        System.out.printf("%s saldo: R$ %.2f %n", account2.getName(), account2.getBalance());
+
+        //solicita ao usuário que informe um valor de retirada para o account2
+        System.out.print("informe o valor da retirada para o account2: ");
+        withdrawAmount = entrada.nextDouble();
+
+        //informa que está tentando retirar o valor da retirada do saldo da conta
+        System.out.printf("Retirando R$ %.2f do saldo de account2. %n", withdrawAmount);
+
+        //efetua a retirada
+        account2.withdraw(withdrawAmount);
+
+        //exibe o saldo de cada objeto
+        System.out.printf("%s saldo: R$ %.2f %n", account1.getName(), account1.getBalance());
+        System.out.printf("%s saldo: R$ %.2f %n", account2.getName(), account2.getBalance());
     }
 }
