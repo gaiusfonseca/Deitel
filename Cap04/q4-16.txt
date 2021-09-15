@@ -1,0 +1,36 @@
+4.16 o que o seguinte programa imprime?
+
+public class Mystery{
+
+    public static void main(String[] args){
+
+        int x = 1;
+        int total = 0;
+
+        while (x <= 10){
+            int y = x * x;
+            System.out.println(y);
+            total += y;
+            ++x;
+        }
+        
+        System.out.printf("Total is %d%n", total);
+    }
+}
+
+    Neste programa temos duas instruções print, uma dentro do laço while e outra após o life while. Portanto, o programa
+    irá imprimir o valor de y (x²), cada vez que passar pelo loop e ao fim do programa imprimirá o valor de total, que é
+    a soma dos quadrados de 1 a 10. Segue abaixo um exemplo:
+
+    >1
+    >4
+    >9
+    >16
+    >25
+    >36
+    >49
+    >64
+    >81
+    >100
+
+    >385
