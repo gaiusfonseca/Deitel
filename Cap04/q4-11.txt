@@ -1,0 +1,8 @@
+4.11 Explique o que acontece quando um programa Java tenta dividir um inteiro por outro. O que acontece com a parte 
+fracionária do cálculo? Como você pode evitar esse resultado?
+
+    Ao dividir um valor inteiro por outro inteiro, o Java aplica a divisão de inteiros e trunca (elimina) a parte
+    fracionária do resultado (não é um arredondamento). Se esse não for o comportamento que esperamos, devemos fazer a 
+    coerção do resultado para o tipo esperado (float ou double), utilizando uma coerção explícita, como por exemplo:
+
+    (double) 7 / 3;
