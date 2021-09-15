@@ -1,0 +1,4 @@
+4.12 Descreva as duas maneiras como as instruções de controle podem ser combinadas.
+
+    As intruções de controle podem ser combinadas através do empilhamento (uma após a outra) ou 
+    aninhamento (uma dentro da outra).
