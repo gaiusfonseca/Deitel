@@ -10,4 +10,6 @@ tarefas poderia ser realizada.
     Por outro lado, se não sabemos de antemão por quantas vezes um procedimento deve se repetir, então o mais adequado é
     utilizar uma "repetição controlada por sentinela". A repetição controlada por sentinela estabelece que um valor
     específico de entrada deve ser inserido quando desejarmos finalizar a repetição, esse valor invalida a condição de 
-    repetição.
+    repetição. Esse tipo seria mais adequado para calcular a soma de um número arbitŕario de pares de inteiros positivos.
+
+    
