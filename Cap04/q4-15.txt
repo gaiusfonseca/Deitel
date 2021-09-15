@@ -1,0 +1,41 @@
+4.15 Identifique e coorrija os erros em cada um dos seguintes fragmento de código. Observalção: pode haver mais de um
+erro em cada trecho de código.
+
+a)
+if(age >= 65);                                              //erro aqui
+    System.out.println("Age is greater or equal to 65");
+else
+    System.out.println("Age is less than 65");
+
+    Não se deve utilizar ponto e vírgula imediatamente após uma instrução if a menos que o comportamento esperado seja 
+    não tomar nenhuma ação. Da forma como está escrito, o programa apresentará um erro de compilação pois foi utilizada
+    uma instrução else sem um if correspondente.
+
+
+b)
+int x = 1, total;                   //erro aqui
+while(x <= 10){
+    total += x;
+    ++x;
+}
+
+    O erro deste programa é que a variável total não foi inicializada, implicando em um erro de compilação;
+
+
+c)
+while(x <= 100)                     //erro aqui
+    total += x;
+    ++x;
+
+    Não foram utilizadas as chaves para delimitar o corpo do laço while, fazendo com que ele presuma que apenas a
+    primeira instrução imediatamente subsequente é o corpo do laço. nessa instrução a variável x não é incrementada,
+    portanto, o programa executa um loop infinito.
+
+
+d)
+while(y > 0){
+    System.out.println(y);
+    y++
+                                    //erro aqui
+    Neste trecho de código não foi especificado o fim do bloco while, então o programa entenderia que as instruções 
+    subsequentes ao y++ também fazem do corpo do laço while.
