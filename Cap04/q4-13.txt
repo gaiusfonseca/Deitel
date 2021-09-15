@@ -1,0 +1,13 @@
+4.13 Que tipo de repetição seria apropriado para calcular a soma dos 100 primeiros inteiros positivos? que tipo seria 
+apropriado para calcular a soma de um número arbitrário de inteiros positivos? Descreva brevemente como cada uma dessas 
+tarefas poderia ser realizada.
+
+    Para controlar uma repetição cujo número de execuções pode ser conhecido antecipadamente, é mais adequado utilizar 
+    uma "repetição controlada por contador". Nesse tipo de repetição, incializamos o contador e o incrementamos a cada 
+    vez que o controle do sistema passar pelo loop, que deverá terminar quando o contador assumir um valor que torne a 
+    nossa condição de repetição inválida.
+
+    Por outro lado, se não sabemos de antemão por quantas vezes um procedimento deve se repetir, então o mais adequado é
+    utilizar uma "repetição controlada por sentinela". A repetição controlada por sentinela estabelece que um valor
+    específico de entrada deve ser inserido quando desejarmos finalizar a repetição, esse valor invalida a condição de 
+    repetição.
