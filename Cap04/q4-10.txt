@@ -1,0 +1,7 @@
+4.10 Compare e contraste a instrução de seleção única if e a instrução de repetição while. Qual é a semelhança dessas
+duas instruções? Qual é a diferença?
+
+    If e If-else são bastante semelhantes já que ambas são estruturas de seleção, a diferença básica entre as duas é que
+    a isntrução if-else permite que uma instrução diferente seja executada caso a condição não seja verdadeira. A
+    instrução if, pode ser utilizada para ocultar uma instrução que só deve ser executada quando uma condição específica
+    for verdadeira.
