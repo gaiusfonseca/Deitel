@@ -1,0 +1,5 @@
+4.14 Qual é a diferença entre pré-incrementar e pós-incrementar uma variável?
+
+    Pré-incrementar e pós-incrementar só apresentam diferença prática quando são utilizados em uma expressão, pois
+    quando pré-incrementamos, a variável tem o seu valor atualizado antes que expressão seja avaliada. Pós-incrementar, 
+    representa exatamente o oposto, priemiro a expressão é avaliada e então a variável tem o seu valor atualizado.
