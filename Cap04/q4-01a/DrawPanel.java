@@ -34,7 +34,7 @@ public class DrawPanel extends JPanel{
                 e largura da janela. A posição y do ponto é decrementada a cada iteração e a posição x é incrementada a
                 cada iteração
             */
-            g.drawLine(0, 0, height - (count * (height / 15)), (width / 15) * count);
+            g.drawLine(0, 0, (width / 15) * count, height - (count * (height / 15)));
             count++;
         }
     }
