@@ -28,9 +28,9 @@ SEGUNDO REFINAMENTO:
 Inicializa double countDistance com o valor 0
 Inicializa double countConsumption com o valor 0
 declara o double efficiency
-declara o double distance
+declara o int distance
 declara o char option
-declara o double consumption
+declara o int consumption
 
 Pergunta se o usuário deseja registrar uma nova viagem (S/N)
 
@@ -45,8 +45,10 @@ Enquanto o usuário não inserir a sentinela
     incrementa o countDistance
     incrementa o countConsumption
 
+    Imprime o rendimento da ultima viagem
+    Imprime a distância total
+    Imprime o consumo total
+
     questiona se o usuário deseja realizar mais uma entrada
 
-Imprime o rendimento da ultima viagem
-Imprime a distância total
-Imprime o consumo total
+

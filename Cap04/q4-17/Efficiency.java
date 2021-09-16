@@ -24,12 +24,12 @@ public class Efficiency{
     public static void main(String[] args){
 
         //declara as variáveis acumuladoras
-        double countDistance = 0;
-        double countConsumption = 0;
+        int countDistance = 0;
+        int countConsumption = 0;
 
         //declara as variaǘeis que capturam as entradas do usuário
-        double distance;
-        double consumption;
+        int distance;
+        int consumption;
         char option;
 
         //declara a variável calculada
@@ -47,31 +47,31 @@ public class Efficiency{
             
             //solicita que o usuário informe a quilometragem
             System.out.printf("quantos quilometros foram percorridos na ultima viagem? ");
-            distance = input.nextDouble();
+            distance = input.nextInt();
 
             //solicita que o usuário informe o consumo
             System.out.printf("quantos litros foram consumidos na ultima viagem? ");
-            consumption = input.nextDouble();
+            consumption = input.nextInt();
 
             //registra o rendimento da ultima viagem
-            efficiency = distance / consumption;
+            efficiency = (double) distance / consumption;
 
             //incrementa os acumuladores
             countDistance += distance;
             countConsumption += consumption;
 
+            //imprime o rendimento da ultima viagem
+            System.out.printf("o rendimento da viagem foi de: %.2f km/l%n", efficiency);
+            
+            //imprime a distância percorrida total
+            System.out.printf("você percorreu: %d km%n", countDistance);                          
+
+            //imprime o consumo total
+            System.out.printf("para percorrer essa distância você consumiu: %d l%n", countConsumption);
+
             //pergunta se o usuário deseja registrar uma nova viagem
             System.out.println("deseja registrar uma nova viagem? (S/N)");
             option = input.next().charAt(0);
         }
-
-        //imprime o rendimento da ultima viagem
-        System.out.printf("o rendimento da ultima viagem foi de %.2f km/l%n", efficiency);
-        
-        //imprime a distância percorrida total
-        System.out.printf("você percorreu: %.2f km%n", countDistance);                          
-
-        //imprime o consumo total
-        System.out.printf("para percorrer essa distância você consumiu: %.2f l%n", countConsumption);
     }
 }
