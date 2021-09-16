@@ -1,0 +1,52 @@
+Para os exercícios de 4.17 a 4.20, execute cada um dos seguintes passos:
+a) Leia a declaração do problema.
+b) Formule o algoritmo utilizando pseudocódigo e refinamento passo a passo de cima para baixo (top-down stepwise).
+c) Escreva um programa Java.
+d) Teste, depure e execute o programa Java.
+e) Processe três conjuntos completos de dados.
+
+4.17 Os motoristas se preocupam com a quilometragem obtida por seus automóveis. Um motorista monitorou várias viagens 
+registrando a quilometragem dirigida e a quantidade de combustível em litros utilizados para cada tanque cheio. 
+Desenvolva um aplicativo Java que receba como entrada os quilômetros dirigidos e os litros de gasolina consumidos 
+(ambos como inteiros) para cada viagem. O programa deve calcular e exibir o consumo em quilômetros/litro para cada 
+viagem e imprimir a quilometragem total e a soma total de litros de combustível consumidos até esse ponto para todas as 
+viagens. Todos os cálculos de média devem produzir resultados de ponto flutuante. Utilize classe Scanner e repetição 
+controlada por sentinela para obter os dados do usuário.
+
+b) 
+TOPO:
+Determine o rendimento em quilômetros/litro de cada viageme e a quilometragem total e consumo total para todas as 
+viagens.
+
+PRIMEIRO REFINAMENTO:
+inicializa as variáveis
+capturar as entradas do usuário
+calcular o redimento e incrementar o contador de quilometragem e consumo enquanto a sentinela não for inserida.
+imprime os resultados
+
+SEGUNDO REFINAMENTO:
+Inicializa double countDistance com o valor 0
+Inicializa double countConsumption com o valor 0
+declara o double efficiency
+declara o double distance
+declara o char option
+declara o double consumption
+
+Pergunta se o usuário deseja registrar uma nova viagem (S/N)
+
+Enquanto o usuário não inserir a sentinela
+    solicita ao usuário que insira a quilometragem da ultima viagem
+    armazena o valor em distance
+
+    solicita ao usuário que insira o consumo em litros da ultima viagem
+    armazena o valor em consumption
+
+    calcula o rendimento e armazena em efficiency
+    incrementa o countDistance
+    incrementa o countConsumption
+
+    questiona se o usuário deseja realizar mais uma entrada
+
+Imprime o rendimento da ultima viagem
+Imprime a distância total
+Imprime o consumo total
