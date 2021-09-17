@@ -1,0 +1,36 @@
+Para os exercícios de 4.17 a 4.20, execute cada um dos seguintes passos:
+a) Leia a declaração do problema.
+b) Formule o algoritmo utilizando pseudocódigo e refinamento passo a passo de cima para baixo (top-down stepwise).
+c) Escreva um programa Java.
+d) Teste, depure e execute o programa Java.
+e) Processe três conjuntos completos de dados.
+
+4.18 Desenvolva um aplicativo Java que determina se um cliente de uma loja de departamentos excedeu o limite de
+crédio em uma conta-correte. Para cada cliente, os seguintes dados estão disponíveis:
+
+a) Número da conta
+b) Saldo no início do mês
+c) Total de todos os itens cobrados desse cliente no mês
+d) Total de créditos aplicados ao cliente no mês
+e) Limite de crédito autorizado
+
+O programa deve inserir todos esses dados como inteiros, calcular o novo saldo (= saldo inicial + despesas - 
+créditos), exibir o novo saldo e detemerminar se o novo saldo excede ao limite de crédito do cliente. para aqueles
+cliente cujo limite de crédito foi excedido, o programa deve exibir a mensagem "Limite de crédito excedido".
+
+    Como neste exercício teremos várias informações pertinentes ao cliente (int account, int invoice, int payments,
+    int credit) e outras que são calculadas a partir delas (int balance, boolean creditLimit), torna-se mais conveniente
+    representar o cliente como uma classe com atributos e métodos específicos, assim cada cliente carregará sua própria 
+    cópia dos atributos.
+
+    TOPO
+    Calcular o novo saldo e informar se o limite de crédito do cliente foi excedido.
+
+    PRIMEIRO REFINAMENTO
+    Instanciar o objeto cliente
+    Informar o saldo atual e se o limite de crédito foi excedido
+
+    SEGUNDO REFINAMENTO
+    Instanciar o objeto clitente
+    Avalia se o limite  de crédito foi excedido
+        Imprimir a String adequada
