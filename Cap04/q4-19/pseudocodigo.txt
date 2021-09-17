@@ -1,0 +1,58 @@
+Para os exercícios de 4.17 a 4.20, execute cada um dos seguintes passos:
+a) Leia a declaração do problema.
+b) Formule o algoritmo utilizando pseudocódigo e refinamento passo a passo de cima para baixo (top-down stepwise).
+c) Escreva um programa Java.
+d) Teste, depure e execute o programa Java.
+e) Processe três conjuntos completos de dados.
+
+4.19 Uma grande empresa paga seu pessoal de vendas com base em comissões. O pessoal de vendas recebe R$ 200 por semana 
+mais 9% de suas vendas brutas durante esse período. Por exemplo, um vendedor que realiza um total de vendas de 
+mercadorias de R$ 5.000 em uma semana recebe R$ 200 mais 9% de R$ 5.000, um total de R$ 650. Foi-lhe fornecida uma 
+lista dos itens vendidos por cada vendedor. Os valores desses itens são como segue:
+
+Item    Value:
+1       239.99
+2       129.75
+3        99.95
+4       350.89
+
+Desenvolva um aplicativo Java que recebe entrada de itens vendidos por um vendedor durante a última semana e calcula e 
+exibe os rendimentos do vendedor. Não existe nenhum limite para o número de itens que pode ser vendido.
+
+    O problema menciona que "não existe nenhum limite para o número de itens que pode ser vendido", portanto, sabemos
+    que teremos que utilizar uma repetição controlada por sentinela para processar as entradas.
+
+    Considerando que o comando não determinou qual o tipo das varáiveis, vamos utilizar double para declarar aquelas que
+    se referem a valores monetários pois entendemos que sejam mais adequadas.
+
+    Vamos começar com o refinamento:
+
+    TOPO:
+    dada as vendas realizadas por um vendedor, calcule a remuneração
+
+    PRIMEIRO REFINAMENTO:
+    inicializar as variáveis
+    solicitar ao usuário que informe as vendas
+    computar o valor total de vendas e remuneração final
+    informar ao usuário a remuneeração
+
+    SEGUNDO REFINAMENTO: 
+    declara a salary
+    declara price
+    instância o input
+    inicializar total com o valor zero
+
+    pergunta ao usuario se deseja inserir um novo registro
+    armazenar opção do usuario na variavel price
+
+    insere entradas enquanto o valor do price não for o valor de sentinela
+        
+        verifica se o valor é maior ou igual a zero
+            Se sim:
+            soma o valor do item ao total
+        
+        pergunta se o usuario deseja inserir um novo registro
+
+    calcula o valor de salary
+    exibe o valor de salary
+    
