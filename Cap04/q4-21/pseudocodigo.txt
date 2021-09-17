@@ -1,0 +1,42 @@
+4.21 processo de localizar o maior valor é muito utilizado em aplicativos de computador. Por exemplo, um programa que 
+determina o vencedor de uma competição de vendas inseriria o número de unidades vendidas por cada vendedor. O vendedor
+que vende mais unidades ganha a competição. Escreva um programa em pseudocódigo e, então, um aplicativo Java que aceita 
+como entrada uma série de 10 inteiros e determina e imprime o maior dos inteiros. Seu programa deve utilizar pelo menos 
+as três variáveis a seguir:
+
+a) counter: um contador para contar até 10 (isto é, monitorar quantos números foram inseridos e determinar quando todos
+ os 10 números foram processados).
+
+b) number: o inteiro mais recentemente inserido pelo usuário.
+
+c) largest: o maior número encontrado até agora.
+
+    O progama deve processar exatamente 10 números inteiros e o comando pede que utilzemos a variável counter, portanto,
+    trata-se de uma repetição controlada por contador.
+
+    TOPO:
+    determinar qual o maior número entre 10 valores inteiros.
+
+    PRIMEIRO REFINAMENTO:
+    declara e inicializa as variáveis
+
+    enquanto 10 entradas não tiverem sido processadas, repete
+        captura o valor informado em number
+        verifica se o valor é o maior até agora
+            atualiza largeste de acordo
+        incrementa counter
+
+    SEGUNDO REFINAMENTO:
+    declarar e inicializar int counter = 0
+    declarar e inicializar int number = 0
+    declarar e inicializar int largest = 0
+    declara e inicializa o Scanner input = System.in
+
+    enquanto os 10 inteiros não tiverem sido processados, repetir
+        solicita que o usuário digite um inteiro
+        armazena o valor em number
+        verifica se o inteiro recebido é maior que o atual valor de largest
+            se sim: atualiza largest
+        incrementa o contador
+    
+    imprime o valor de largest
