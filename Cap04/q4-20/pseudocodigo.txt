@@ -1,0 +1,56 @@
+Para os exercícios de 4.17 a 4.20, execute cada um dos seguintes passos:
+a) Leia a declaração do problema.
+b) Formule o algoritmo utilizando pseudocódigo e refinamento passo a passo de cima para baixo (top-down stepwise).
+c) Escreva um programa Java.
+d) Teste, depure e execute o programa Java.
+e) Processe três conjuntos completos de dados.
+
+4.20 Desenvolva um aplicativo Java que determina o salário bruto de cada um de três empregados. A empresa paga as horas 
+normais pelas primeiras 40 horas trabalhadas por cada funcionário e 50% a mais por todas as horas trabalhadas além das 
+40 horas. Você recebe uma lista de empregados, o número de horas trabalhadas por eles na semana passada e o salário-hora
+de cada um. Seu programa deve aceitar a entrada dessas informações para cada empregado e, então, determinar e exibir o 
+salário bruto do empregado. Utilize a classe Scanner para inserir os dados.
+
+    Nesse problema somos solicitados a coletar informações específicas a respeito de 3 empregados, processar as entradas
+    e devolver uma saída para cada um. Notem que o número de empregados é conhecido, logo estamos falando de uma 
+    repetição controlada por contador.
+
+    TOPO:
+    Calcular o salário bruto de três empregados
+
+    PRIMEIRO REFINAMENTO:
+    Inicializar as variáveis
+    Solicitar as entradas para cada um dos usuários
+    Imprimir as saídas para cada um dos usuários
+
+    SEGUNDO REFINAMENTO:
+    declara String name
+    delcara e inicializa int hours = 0
+    declara e inicializa double hourSalary = 0
+    declara e inicializa double bruteSalary = 0;
+    declara Scanner input
+    declara e inicializa countEmployee = 0
+
+    enquanto countEmployee for menor que 3, repete
+        pergunta o nome
+        armazena o nome em name
+
+        enquanto hours <= 0 repete a pergunta
+            pergunta as horas trabalhadas
+            armazena as horas trabalhadas em hours
+
+        enquanto hourSalary <= 0 repete a pergunta
+            pergunta o salário-hora
+            armazena o salário-hora em hourSalary
+
+        verifica se a quantidade de horas trabalhadas é superior a quarenta
+            se sim:
+                calcula o salário bruto e armazena em bruteSalary
+                imprime o nome e o salário bruto
+                redefine as variáveis hours e hourSalary para os valores padrões
+                incrementa o contador
+            se não:
+                calcula o salário bruto e armazena em bruteSalary
+                imprime o nome e o salário bruto
+                redefine as variáveis hours e hourSalary para os valores padrões
+                incrementa o contador
