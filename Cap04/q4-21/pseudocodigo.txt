@@ -11,7 +11,7 @@ b) number: o inteiro mais recentemente inserido pelo usuário.
 
 c) largest: o maior número encontrado até agora.
 
-    O progama deve processar exatamente 10 números inteiros e o comando pede que utilzemos a variável counter, portanto,
+    O progama deve processar exatamente 10 números inteiros e o comando pede que utilizemos a variável counter, portanto,
     trata-se de uma repetição controlada por contador.
 
     TOPO:
