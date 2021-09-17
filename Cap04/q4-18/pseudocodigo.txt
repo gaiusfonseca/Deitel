@@ -27,10 +27,14 @@ cliente cujo limite de crédito foi excedido, o programa deve exibir a mensagem 
     Calcular o novo saldo e informar se o limite de crédito do cliente foi excedido.
 
     PRIMEIRO REFINAMENTO
-    Instanciar o objeto cliente
-    Informar o saldo atual e se o limite de crédito foi excedido
+    Instanciar o objeto cliente com saldo maior que 0
+    Verificar se o saldo foi excedido
+        Imprimir a mensagem correspondente a situação do cliente
 
-    SEGUNDO REFINAMENTO
-    Instanciar o objeto clitente
-    Avalia se o limite  de crédito foi excedido
-        Imprimir a String adequada
+    Modificar os dados do cliente para que o saldo seja 0
+    Verificar se o saldo foi excedido
+        Imprimir a mensagem correspondente a situação do cliente
+
+    Modificar os dados do cliente para que o saldo seja menor que 0
+    Verificar se o saldo foi excedido
+        Imprimir a mensagem correspondente a situação do cliente
