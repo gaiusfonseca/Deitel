@@ -1,0 +1,110 @@
+4.28 Modifique o código dado para produzir a saída mostrada em cada parte do problema. Utilize técnicas de recuo 
+adequadas. Não faça nenhuma alteração além de inserir chaves e alterar o recuo do código. O compilador ignora recuo em 
+um programa Java. Eliminamos o recuo do código fornecido para tornar o problema mais desafiador. Observação: é possível 
+que não seja necessária nenhuma modificação para algumas das partes.
+
+if (y == 8)
+if (x == 5)
+System.out.println("@@@@@");
+else
+System.out.println("#####");
+System.out.println("$$$$$");
+System.out.println("&&&&&");
+
+a) Supondo que x = 5 e y = 8 , a seguinte saída é produzida:
+>@@@@@
+>$$$$$
+>&&&&&
+
+    Vamos aplicar as convenções de recuo para deixa o programa mais legível:
+
+    if (y == 8)
+        if (x == 5)
+            System.out.println("@@@@@");
+        else
+            System.out.println("#####");
+    System.out.println("$$$$$");
+    System.out.println("&&&&&");
+
+    para x = 5 e y = 8 o primeiro e segundo ifs serão verdadeiros, portanto nenhuma alteração será necessária:
+    >@@@@@ (dois ifs verdadeiros)
+    >$$$$$ (executado após o bloco else)
+    >&&&&& (executado após o bloco else)
+
+b) Supondo que x = 5 e y = 8 , a seguinte saída é produzida:
+>@@@@@
+
+    Vamos aplicar as convenções de recuo para deixa o programa mais legível:
+
+    if (y == 8)
+        if (x == 5)
+            System.out.println("@@@@@");
+        else
+            System.out.println("#####");
+    System.out.println("$$$$$");
+    System.out.println("&&&&&");
+
+    como queremos que apenas a parte verdadeiro do if mais interno seja impressa, vamos encapsular todas as instruções
+    posteriores ao else em um bloco de código:
+
+    if (y == 8)
+        if (x == 5)
+            System.out.println("@@@@@");
+        else{
+            System.out.println("#####");
+            System.out.println("$$$$$");
+            System.out.println("&&&&&");
+        }
+
+    para x = 5 e y = 8 a saída ficará conforme solicitado:
+    >@@@@@
+
+c) REPETIDA
+
+d) Supondo que x = 5 e y = 7 , a seguinte saída é produzida. [Observação: todas as três últimas instruções de saída 
+depois do else são partes de um bloco].
+>#####
+>$$$$$
+>&&&&&
+
+    Vamos aplicar as convenções de recuo para deixa o programa mais legível:
+
+        if (y == 8)
+            if (x == 5)
+                System.out.println("@@@@@");
+            else
+                System.out.println("#####");
+        System.out.println("$$$$$");
+        System.out.println("&&&&&");
+
+    os valores fornecidos para x e y invalidam as partes verdadeiras do bloco if, mas sabemos pelo comando da questão 
+    que as três ultimas instruções são um bloco de código:
+
+        if (y == 8)
+            if (x == 5)
+                System.out.println("@@@@@");
+            else{
+                System.out.println("#####");
+                System.out.println("$$$$$");
+                System.out.println("&&&&&");
+            }
+
+    da forma como está o else está associado com o if mais interno e não será executado já que a condição mais externa
+    será falsa. Para que o else seja executado precisamos associar o else com o bloco externo. Para isso vamos colocar
+    um bloco de código na parte verdadeira do if mais externo:
+
+        if (y == 8){
+            if (x == 5)
+                System.out.println("@@@@@");
+        }else{
+            System.out.println("#####");
+            System.out.println("$$$$$");
+            System.out.println("&&&&&");
+        }
+
+    dessa forma, quando o teste do if mais externo falhar, o controle do programa será transferido para o bloco else,
+    fazendo com que a seguinte saída seja produzida:
+    >#####
+    >$$$$$
+    >&&&&&
+    
