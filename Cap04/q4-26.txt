@@ -1,0 +1,42 @@
+4.26 O que o seguinte programa imprime?
+
+public class Mystery3{
+    
+    public static void main(String[] args){
+        
+        int row = 10;
+    
+        while (row >= 1){
+            int column = 1;
+            while (column <= 10){
+                System.out.print(row % 2 == 1 ? "<" : ">");
+                ++column;
+        }
+        --row;
+        System.out.println();
+        }
+    }
+} // fim da classe Mystery3
+
+    o print mais interno imprimirá '<' quando o número for ímpar e '>' quando o número for par, dado que row começa 
+    com o valor 1 e o loop se repete até que column receba o valor 11, essa instrução fará dez prints do mesmo caractere:
+
+    >>>>>>>>>>
+    
+    depois o programa decrementa row e move o cursor para o começo da próxima linha. Agora como row é um número 
+    ímpar (9), o programa imprime 10x '<':
+
+    <<<<<<<<<<
+
+    decrementa row, move o cursor para próxima linha e repete esse conjunto de 2 padrões 5x.
+
+    >>>>>>>>>>
+    <<<<<<<<<<
+    >>>>>>>>>>
+    <<<<<<<<<<
+    >>>>>>>>>>
+    <<<<<<<<<<
+    >>>>>>>>>>
+    <<<<<<<<<<
+    >>>>>>>>>>
+    <<<<<<<<<<
