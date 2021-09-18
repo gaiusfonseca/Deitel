@@ -1,0 +1,60 @@
+4.27 Determine a saída para cada um dos conjuntos dados de código quando x é 9 e y é 11 e quando x é 11 e y é 9. 
+O compilador ignora o recuo em um programa Java. Da mesma forma, o compilador Java sempre associa um else com o if 
+imediatamente precedente a menos que instruído a fazer de outro modo pela colocação de chaves ({}). À primeira vista, o 
+programador pode não ter certeza de qual if um else particular corresponde — essa situação é conhecida como "problema 
+do else oscilante". Eliminamos o recuo do seguinte código para tornar o problema mais desafiador. Dica: aplique as 
+convenções de recuo que você aprendeu.
+
+a)
+if (x < 10) 
+if (y > 10)
+System.out.println("*****");
+else
+System.out.println("#####");
+System.out.println("$$$$$");
+
+    Aplicando as convenções de recuo:
+
+    if (x < 10) 
+        if (y > 10)
+            System.out.println("*****");
+        else
+            System.out.println("#####");
+    System.out.println("$$$$$");
+
+    para x = 9 e y = 11 temos a seguinte saída:
+    >*****
+    >$$$$$
+
+    para x = 11 e y = 9 temos a seguinte saída:
+    >$$$$$
+
+b) 
+if (x < 10)
+{
+if (y > 10)
+System.out.println("*****");
+}
+else
+{
+System.out.println("#####");
+System.out.println("$$$$$");
+}
+
+    Aplicando as convenções de recuo:
+
+    if (x < 10){
+        if (y > 10)
+            System.out.println("*****");
+    }
+    else{
+        System.out.println("#####");
+        System.out.println("$$$$$");
+    }
+
+    para x = 9 e y = 11 temos a seguinte saída:
+    >*****
+
+    para x = 1 e y = 9 temos a seguinte saída:
+    >#####
+    >$$$$$
