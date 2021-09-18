@@ -1,0 +1,8 @@
+4.34 que há de errado com a seguinte instrução? Forneça a instrução correta para adicionar 1 à soma de x e y .
+System.out.println(++(x + y));
+
+    Os operadores de pré-incremento e pós-incremento, assim como os complementares de decremento, só podem ser 
+    utilizados em variáveis. Para que a expressão retorne o valor de x + y acrescido de 1, podemos pré-incrementar x out
+    y, dessa forma ou códido ficaria:
+
+    System.out.println(++x + y); ou System.out.println(x + ++y);
