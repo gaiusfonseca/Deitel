@@ -1,0 +1,16 @@
+5.8 Compare e contraste as instruções break e continue.
+
+    A instrução break pode ser utilizada no corpo de uma instrução de seleção múltipla ou em uma estrutura de repetição.
+    Ela é utilizada para interromper o fluxo natural do programa. 
+    
+    Quando utilizada em uma estrutura de repetição, ela sai da estrutura de repetição, mesmo que a condição de 
+    continuação tenha sido satisfeita. 
+    
+    Se utilizada em uma estrutura de seleção múltipla (switch), ela sai da estrutura switch sempre que break é 
+    alcançado. Normalmente os cases de uma instrução switch terminam com uma instrução break, se break não for utilizado
+    o programa executa o case subsequente. Normalmente esse não é o comportamento esperado.
+
+    A instrução continue também altera o fluxo natural do programa, mas afeta somente as estruturas de repetição (while,
+    do... while e for). Quando uma isntrução continue é alcançado, a instrução de incremento é executada (se estivermos 
+    em um for) e a condição de continuação é verificada. Todas as demais instruções do corpo da estrutura de repetição 
+    posteriores ao continue, são ignoradas.
