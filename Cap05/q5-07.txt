@@ -1,0 +1,6 @@
+5.7 Discuta uma situação em que seria mais adequado utilizar uma instrução do … while do que uma instrução while. 
+Explique por quê.
+
+    A instrução do... while sempre executa pelo menos uma vez, portanto, ela seria mais adequada para, por exemplo, 
+    validar uma entrada fornecida peplo usuário, assim, se o valor fornecido pelo usuário na primeira execução não for
+    válido, ele repete a instrução novamente.
