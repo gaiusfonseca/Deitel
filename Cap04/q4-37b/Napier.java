@@ -5,7 +5,7 @@
     n! = 1 (para n = 0)
     Por exemplo, 5! = 5 · 4 · 3 · 2 · 1, o que dá 120.
 
-    a) Escreva um aplicativo que estima o valor da constante matemática e utilizando a fórmula a seguir. Permita ao 
+    b) Escreva um aplicativo que estima o valor da constante matemática e utilizando a fórmula a seguir. Permita ao 
     usuário inserir o número de termos a calcular.
 
     e = 1 + 1 / 1! + 1 / 2! + 1 / 3! ...
