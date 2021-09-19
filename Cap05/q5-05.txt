@@ -1,0 +1,18 @@
+5.5 Descreva os quatro elementos básicos de repetição controlada por contador.
+
+    Os elementos de uma repetição controlada por contador são:
+
+    Variável de controle é a variável utilizada para verificar a condição de continuação e normalmente é incrementada
+    a cada iteração.
+
+    Toda variavel de controle deve ser inicializada com um Valor de inicialização, que típicamente é definido como 0 
+    ou 1.
+
+    A cada iteração, antes de executar o bloco de instruções, a condição de continuação é verificada e se for avaliada
+    como verdadeira, então o bloco de instruções é executado.
+    
+    A cada iteração, normalemnte ao final do bloco de instruções, existe uma instrução que modifica (incrementando ou 
+    decrementando) o valor da variável de controle.
+
+    Portanto, uma repetição controlada por contador é composta de 4 elementos: variável de controle, valor de 
+    inicialização, condição de continuação e instrução de modificação.
