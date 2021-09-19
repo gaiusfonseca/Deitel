@@ -1,0 +1,11 @@
+5.6 Compare e contraste as instruções de repetição while e for.
+
+    A instrução de repetição while possui uma condição de continuação que instrui a executar o corpo do while enquanto
+    a condição for verdadeira, ela é mais adequada para ser utilizada quando não conhecemos ao certo a quantidade de 
+    vezes que executaremos uma ação. Apesar disso, podemos utiliza uma instrução while para implementar um loop 
+    controlado por contador.
+
+    A isntrução for é uma maneira mais conveniente de utilizarmos uma repetição controlada por contador, em seu 
+    cabeçalho é possível especificar todos os elementos que caracterizam essa instrução (variável de controle, 
+    valor de inicialização, condição de parada e instrução de modificação). A instrução for, também pode ser utilizada
+    para realizar uma repetição indeterminada.
