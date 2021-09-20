@@ -1,0 +1,40 @@
+5.9 Localize e corrija o(s) erro(s) em cada um dos seguintes segmentos de código:
+
+a)  For (i = 100, i >= 1, i++)
+        System.out.println(i);
+
+    O erro nesse trecho de código consiste no fato de que a variável é inicializada com um valor (100) superior ao da 
+    condição de continuação (1) e a variável de controle é incrementada a cada iteração, criando um cenário em que a 
+    condição de continuação nunca será avaliada como falsa, resultando em um loop infinito. Podemos corrigir esse código
+    alterando a instrução de modificação para que decremente a variável de controle a cada iteração.
+
+b) O seguinte código deve imprimir se o inteiro value for par ou ímpar:
+    switch (value % 2 ){
+        case 0 :
+            System.out.println( "Even integer" );
+        case 1 :
+            System.out.println( "Odd integer" );
+    }
+
+    A forma mais comum da instrução switch pede que ao final de cada 'case' tenhamos uma instrução 'break', dessa forma 
+    apenas um dos cases será executado. Da forma como está, sempre que o 'case 0' (value for par) for executado, os dois
+    prints serão realizados.
+
+c) O código a seguir deve dar saída dos inteiros ímpares de 19 a 1:
+    for (i = 19 ; i >= 1 ; i += 2 )
+        System.out.println(i);
+
+    Aqui a varíavel de controle foi inicializada com o valor 19, superior ao valor da condição de continuação (1) e é
+    incrementada em 2 a cada iteração. Novamente resultando em um loop infinito. O correto seria decrementar a váriavel 
+    em 2 a cada iteração.
+
+d) O código seguinte deve dar saída dos inteiros pares de 2 a 100:
+    counter = 2 ;
+    do{
+        System.out.println(counter);
+        counter += 2 ;
+    } While (counter < 100 );
+
+    Aqui temos um exemplo de erro comun conhecido como 'off by one', ou seja, o código está práticamente correto, mas 
+    imprimirá o valor 100, pois a condição de continuação foi definida como <100, portanto, mão será executada quando
+    counter for 100. para corrigir, basta alterar a condição para <=100.
