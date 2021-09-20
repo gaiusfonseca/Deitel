@@ -13,8 +13,8 @@ Porém, um dos problemas de aprender por conta própria é que em algum momento 
 tenha a quem perguntar. Sei que muitas pessoas começam por esse livro, mas talvez por não conseguir resolver alguns de
 seus exercícios acabam desistindo dele.
 
-Por este motivo optei por iniciar esse diretório, no qual pretendo reunir todas as questões do livro, sejam ela teóricas
-ou práticas, comentadas. A ideia é permitir que aqueles que sentirem dificuldades com as questões possam entendê-las
+Por este motivo optei por iniciar esse diretório, no qual pretendo **reunir todas as questões do livro, sejam ela teóricas
+ou práticas, comentadas.** A ideia é permitir que aqueles que sentirem dificuldades com as questões possam entendê-las
 através de uma explicação um pouco mais detalhada.
 
 E se você já conhece a linguagem e quiser me ajudar, seja muito bem vindo, fique a vontade para contribuir.
