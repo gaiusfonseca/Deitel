@@ -27,4 +27,7 @@ E se você já conhece a linguagem e quiser me ajudar, seja muito bem vindo, fiq
     - [ ] 4.38
     - [ ] 4.39
 - Capítulo 5
-    - [ ] 5.02
+    - [ ] 5.02 (GUI)
+    - [ ] 5.31 (Desafio)
+    - [ ] 5.32 (Desafio)
+    - [ ] 5.33 (Desafio)
