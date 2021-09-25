@@ -1,0 +1,43 @@
+O que o seguinte segmento de programa faz?
+for (i = 1 ; i <= 5 ; i++){
+    
+    for (j = 1 ; j <= 3 ; j++){
+        
+        for (k = 1 ; k <= 4 ; k++)
+            System.out.print( '*' );
+        
+        System.out.println();
+    } // fim do for interno
+
+    System.out.println();
+} // fim do for externo
+
+o for mais interno imrpimirá 4x * e na sequência o for intermediário moverá o cursor para a próxima linha em branco e 
+esse processo será repetido por mais duas vezes:
+
+>****
+>****
+>****
+
+O for mais interno então pula uma linha e repete esse processo por mais 4x:
+
+>****
+>****
+>****
+>
+>****
+>****
+>****
+>
+>****
+>****
+>****
+>
+>****
+>****
+>****
+>
+>****
+>****
+>****
+>
