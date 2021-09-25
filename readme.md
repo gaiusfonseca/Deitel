@@ -19,7 +19,7 @@ através de uma explicação um pouco mais detalhada.
 
 E se você já conhece a linguagem e quiser me ajudar, seja muito bem vindo, fique a vontade para contribuir.
 
-## TO DO
+## To Do
 
 - Capítulo 4
     - [ ] 4.35
