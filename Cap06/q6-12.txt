@@ -1,0 +1,31 @@
+6.12 Escreva instruções que atribuem inteiros aleatórios à variável n nos seguintes intervalos:
+
+a) 1 <= n <= 2.
+
+    SecureRandom randomNumbers = new SecureRandom();
+    1 + randomNumbers.nextInt(2);
+
+b) 1 <= n <= 100.
+
+    SecureRandom randomNumbers = new SecureRandom();
+    1 + randomNumbers.nextInt(100);
+
+c) 0 <= n <= 9.
+
+    SecureRandom randomNumbers = new SecureRandom();
+    randomNumbers.nextInt(10);
+
+d) 1000 <= n <= 1112.
+
+    SecureRandom randomNumbers = new SecureRandom();
+    1000 + randomNumbers.nextInt(113)
+
+e) –1 <= n <= 1.
+
+    SecureRandom randomNumbers = new SecureRandom();
+    randomNumbers.nextInt(3) - 1;
+
+f) –3 <= n <= 11.
+
+    SecureRandom randomNumbers = new SecureRandom();
+    randomNumbers.nextInt(15) - 3;
