@@ -1,0 +1,21 @@
+6.11 Responda cada uma das seguintes perguntas:
+a) O que significa escolher números "aleatoriamente"?
+
+    Um número aleatório significa que não houve nenhum critério de decisão envolvido na sua escolha, ou seja, seria um
+    número sorteado ao acaso. A consequência disso é todos os possíveis valores tem uma chance igual de ser sorteado.
+
+b) Por que o método nextInt da classe SecureRandom é útil para simular jogos de azar?
+
+    Jogos de azar normalmente envolvem a aposta em um palpite que um certo resultado será concretizado e para ser 
+    "justo", qualquer palpite deveria ter exatamente a mesma chance de ser possível. Como o método nextInt fornece
+    números aleatórios, eles tem a mesma chance de serem sorteados.
+
+c) Por que frequentemente é necessário escalonar ou deslocar os valores produzidos por um objeto SecureRandom ?
+
+    Precisamos escalonar valores para determinar a faixa de resutlados possíveis, enquanto que o deslocamento é 
+    utilizado para determinar o valor máximo e mínimo desse intervalo.
+
+d) Por que a simulação computadorizada de situações do mundo real é uma técnica útil?
+
+    Porque nos permite simular um um evento em um intervalo de tempo e com custos significativamente menores do que se
+    fizéssemos a simulação no mundo real.
