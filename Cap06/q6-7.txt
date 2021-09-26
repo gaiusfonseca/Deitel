@@ -1,0 +1,34 @@
+6.7 Qual é o valor de x depois que cada uma das seguintes instruções é executada?
+
+a) x = Math.abs(7.5);
+
+    7.5 -> abs retorna o valor absoluto.
+
+b) x = Math.floor(7.5 );
+
+    7 -> floor retorna o maior inteiro não maior que o argumento
+
+c) x = Math.abs(0.0);
+
+    0.0 -> abs retorna o valor absoluto.
+
+d) x = Math.ceil(0.0);
+
+    0 -> retorna o menor inteiro não menor que o argumento
+
+e) x = Math.abs(-6.4 );
+
+    6.4 -> retorna o valor absoluto
+
+f) x = Math.ceil(-6.4);
+
+    -7 -> retorna o menor inteiro não menor que o argumento. Aqui a representação inteira do argumento seria -6 e menor
+    inteiro não menor que -6 seria -7.
+
+g) x = Math.ceil(-Math.abs(-8 + Math.floor(-5.5)));
+
+    começaremos analisando da função mais interna para a mais externa:
+    Math.floor(-5.5) -> retorna -5 pois é o maior inteiro não maior que -5.
+    -5 + (-8) = -13, portanto a segunda função é Math.abs(-13), que retorna o valor absoluto, portanto, 13.
+    -(13) = -13. Portanto a função mais externa Math.ceil(-13) retorna -13, já que este é o menor inteiro não menor que 
+    -13.
