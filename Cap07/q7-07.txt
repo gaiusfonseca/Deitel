@@ -1,0 +1,26 @@
+Determine se cada um dos seguintes é verdadeiro ou falso. Se falso, explique por quê.
+
+a) Para referir-se a uma localização particular ou elemento dentro de um array, especificamos o nome do array e o valor 
+do elemento particular.
+
+    falso. Não se especifica o valor e sim o seu índice.
+
+b) Uma declaração de array reserva espaço para o array.
+
+    verdadeiro. uma declaração de array reserva memória suficiente para comodar n variáveis do tipo especificado.
+
+c) Para indicar que 100 localizações devem ser reservadas para o array de inteiros p , o programador escreve a 
+declaração p[100];
+
+    falso. Para especificar corretamente é necessário informar o tipo, portanto: int p[100];
+
+d) Um aplicativo que inicializa os elementos de um array de 15 elementos como zero deve conter pelo menos uma instrução 
+for.
+
+    falso. É possível inicializar um array com uma expressão de inicialização.
+    int[] zeros = {0, 0, 0, 0, ..., o};
+
+e) Um aplicativo que soma os elementos de um array bidimensional deve conter instruções for aninhadas.
+
+    verdadeiro. O for mais externo percorrerá as linhas enquanto que o for mais interno percorrerá as colunas, ou 
+    vice-versa.
