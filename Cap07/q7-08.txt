@@ -23,7 +23,7 @@ d) Copie o array a de 11 elementos para a primeira parte de array b, que contém
 e) Determine e exiba os maiores e menores valores contidos no array de ponto flutuante w de 99 elementos.
 
     public int getMinimun(int[] w){
-        int minimun;
+        int minimun = w[0];
 
         for(int valor : w){
             if(valor < minimun){
@@ -35,7 +35,7 @@ e) Determine e exiba os maiores e menores valores contidos no array de ponto flu
     }
 
     public int getMaximun(int[] w){
-        int maximun;
+        int maximun = w[0];
 
         for(int valor : w){
             if(valor > maximun){

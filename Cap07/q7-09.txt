@@ -1,0 +1,103 @@
+Considere um array de inteiros dois por três t .
+
+a) Escreva uma instrução que declara e cria t .
+
+    int[][] t = new int[2][3];
+
+b) Quantas linhas tem t ?
+
+    Duas linhas.
+
+c) Quantas colunas tem t ?
+
+    Três colunas.
+
+d) Quantos elementos tem t ?
+
+    t possui 2 x 3 elementos, portanto 6 elementos.
+
+e) Escreva expressões de acesso para todos os elementos na linha 1 de t.
+
+    t[0][0];
+    t[0][1];
+    t[0][2];
+
+f) Escreva expressões de acesso para todos os elementos na coluna 2 de t.
+
+    t[0][2];
+    t[1][2];
+
+g) Escreva uma única instrução que configura o elemento de t na linha 0 e na coluna 1 como zero.
+
+    t[0][1] = 0;
+
+h) Escreva instruções individuais para inicializar cada elemento de t para zero.
+
+    t[0][0] = 0;
+    t[0][1] = 0;
+    t[0][2] = 0;
+    t[1][0] = 0;
+    t[1][1] = 0;
+    t[1][2] = 0;
+
+i) Escreva uma instrução for aninhada que inicializa cada elemento de t como zero.
+
+    for(int linha = 0; linha < t.length; linha++){
+
+        for(int coluna = 0; coluna < t[linha].length; coluna++){
+            t[linha][coluna] = 0;
+        }
+    }
+
+j) Escreva uma instrução for aninhada que insere os valores para os elementos de t a partir do usuário.
+
+for(int linha = 0; linha < t.length; linha++){
+
+        for(int coluna = 0; coluna < t[linha].length; coluna++){
+            
+            System.out.printf("informe o valor de t[%d][%d]: ", linha, coluna);
+            t[linha][coluna] = input.nextInt();
+        }
+    }
+
+k) Escreva uma série de instruções que determina e exibe o valor menor em t .
+
+    int minimun = t[0][0];
+
+    for(int line = 0; line < t.length; line++){
+
+        for(int column = 0; column < t[line].length; column++){
+
+            if(t[line][column] < minimun){
+                minimun = t[line][column];
+            }
+        }
+    }
+
+    System.out.printf("minimun is: %d", minimun);
+
+l) Escreva uma única instrução printf que exibe os elementos da primeira linha de t .
+
+    System.out.printf("%d %d %d",t[0][0], t[0][1], t[0][2]);
+
+m) Escreva uma instrução que soma os elementos da terceira coluna de t . Não utilize repetição.
+
+    int total = t[0][2] + t[1][2];
+
+n) Escreva uma série de instruções que exibe o conteúdo de t no formato tabular. Liste os índices de coluna como títulos
+na parte superior e liste os índices de linha à esquerda de cada linha.
+
+    //imprimir o cabeçalho
+    System.out.printf("%8s %8s %8s %8s%n", "        ", "coluna 1","coluna 2", "coluna 3");
+
+    //imprimir a tabela
+    for(int line = 0; line < t.length; line++){
+
+        System.out.printf("linha %d: ", line);
+
+        for(int column = 0; column < t[line].length; column++){
+            System.out.printf("%8d ", t[line][column]);
+        }
+
+        System.out.println();
+    }
