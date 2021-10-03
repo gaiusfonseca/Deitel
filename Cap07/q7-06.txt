@@ -1,0 +1,12 @@
+Preencha as lacunas em cada uma das seguintes afirmações:
+a) O array unidimensional p contém quatro elementos. Os nomes desses elementos são p[0], p[1], p[2] e p[3].
+
+b) Nomear um array, declarar seu tipo e especificar o número de dimensões no array é chamado de EXPRESSÃO DE CRIAÇÃO DE 
+array.
+
+c) Em um array bidimensional, o primeiro índice identifica a LINHA de um elemento e o segundo índice identifica a COLUNA 
+de um elemento.
+
+d) Um array m por n contém M linhas, N colunas e M * N elementos.
+
+e) O nome do elemento na linha 3 e na coluna 5 do array d é d[3][5] .
