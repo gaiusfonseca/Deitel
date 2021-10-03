@@ -1,0 +1,47 @@
+Escreva instruções Java para realizar cada uma das seguintes tarefas:
+
+a) Exiba o valor do elemento 6 do array f.
+
+    System.out.print(f[5]);
+
+b) Inicialize cada um dos cinco elementos de array de inteiros unidimensional g como 8.
+
+    int[] g = {8, 8, 8, 8, 8};
+
+c) Some os 100 elementos do array de ponto flutuante c .
+
+    int total = 0;
+
+    for(int index = 0; index < c.length; index++){
+        total += c[index];
+    }
+
+d) Copie o array a de 11 elementos para a primeira parte de array b, que contém 34 elementos.
+
+    System.arraycopy(a, 0, b, 0, a.length);
+
+e) Determine e exiba os maiores e menores valores contidos no array de ponto flutuante w de 99 elementos.
+
+    public int getMinimun(int[] w){
+        int minimun;
+
+        for(int valor : w){
+            if(valor < minimun){
+                minimun = valor;
+            }
+        }
+
+        return minimun;
+    }
+
+    public int getMaximun(int[] w){
+        int maximun;
+
+        for(int valor : w){
+            if(valor > maximun){
+                maximun = valor;
+            }
+        }
+
+        return maximun;
+    }
