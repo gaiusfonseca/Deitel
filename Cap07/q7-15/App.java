@@ -4,6 +4,7 @@
     tamanho padrão do array.
 */
 
+//lembre-se de passar um argumento para que o array seja inicializado com o tamanho solicitado
 public class App{
 
     public static void main(String[] args) {
