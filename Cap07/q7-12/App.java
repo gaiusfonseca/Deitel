@@ -30,7 +30,7 @@ public class App{
                 //se não tiver espaço disponível para o novo número, redimensiona o array e insere o número
                 }else{
                     numbers = redim(numbers);
-                    numbers[i] = number;
+                    numbers[numbers.length - 1] = number;
                 }
             }
 
@@ -76,7 +76,7 @@ public class App{
     }
 
     /**
-     * Imprime os valores diferentes de zero.
+     * Imprime os valores do array.
      * @param numbers Um array de inteiros.
      */
     public static void displayNumbers(int[] numbers) {
@@ -84,9 +84,7 @@ public class App{
         System.out.println("\nEstes são os valores que não estão duplicados: ");
 
         for(int value : numbers){
-            if(value != 0){
-                System.out.println(value);
-            }
+            System.out.println(value);
         }
 
         System.out.printf("tamanho do array: %d%n", numbers.length);
