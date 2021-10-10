@@ -4,7 +4,11 @@
 
     a) Quantos jogos são ganhos na primeira rolagem, segunda rolagem, …, vigésima rolagem e depois da vigésima rolagem?
 
+        Execute o programa para ver os resultados.
+
     b) Quantos jogos são perdidos na primeira rolagem, segunda rolagem, …, vigésima rolagem e depois da vigésima rolagem?
+
+        Execute o programa para ver os resultados
 
     c) Quais são as chances de ganhar no jogo de dados? [Observação: você deve descobrir que o craps é um dos jogos mais 
     comuns de cassino. O que você supõe que isso significa?]
@@ -16,6 +20,8 @@
         possível (6 ou 8) e é improvável repetirmos esse resultado.
 
     d) Qual é a duração média de um jogo de dados craps?
+
+        Um jogo de craps dura em média 3,3784 rodadas.
 
     e) As chances de ganhar aumentam com a duração do jogo?
 
