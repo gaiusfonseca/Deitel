@@ -1,0 +1,9 @@
+    8.2 (Com base na Seção 8.14) Explique a noção de acesso a pacotes no Java. Explique os aspectos negativos do acesso 
+    de pacote.
+
+        Quando uma classe ou propriedade da classe é declarda sem especificar um modificador de acesso, diz-se que a 
+        classe e seus membros possuem acesso de pacote, isto é, ela e seus membros estão acessíveis a todas as outras
+        classes do mesmo pacote.
+
+        Como elas ficam aceessíveis a outras classes e seus membros, é bem possível que elas sofram modificações 
+        indesejadas. Essa prática viola o princípio do acesso mínimo e o encapsulamento.
