@@ -1,0 +1,5 @@
+8.03 O que acontece quando um tipo de retorno, mesmo void , é especificado para um construtor?
+
+    Na verdade estaremos declarando um método que tem o mesmo nome da Classe, isso não gera um erro de compilação e nem
+    de execução, mas pode ser um erro de lógica se o esperado fosse que esse méotodo fosse chamado quando instanciacemos
+    um objeeto da classe.
