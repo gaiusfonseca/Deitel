@@ -31,3 +31,21 @@ E se você já conhece a linguagem e quiser me ajudar, seja muito bem vindo, fiq
     - [ ] 5.31 (Desafio)
     - [ ] 5.32 (Desafio)
     - [ ] 5.33 (Desafio)
+- Capítulo 6
+    - [ ] 6.01 (GUI)
+    - [ ] 6.02 (GUI)
+- Capítulo 7
+    - [ ] 7.22
+    - [ ] 7.23
+    - [ ] 7.24
+    - [ ] 7.25
+    - [ ] 7.26
+    - [ ] 7.27
+    - [ ] 7.28
+    - [ ] 7.29
+    - [ ] 7.30
+    - [ ] 7.31
+    - [ ] 7.32
+    - [ ] 7.33
+    - [ ] 7.34
+    - [ ] 7.35
