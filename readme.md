@@ -35,6 +35,7 @@ E se você já conhece a linguagem e quiser me ajudar, seja muito bem vindo, fiq
     - [ ] 6.01 (GUI)
     - [ ] 6.02 (GUI)
 - Capítulo 7
+    - [ ] 7.01 (GUI)
     - [ ] 7.22
     - [ ] 7.23
     - [ ] 7.24
