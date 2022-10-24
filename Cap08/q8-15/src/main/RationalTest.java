@@ -8,6 +8,7 @@ public class RationalTest {
 		shouldThrowEceptionWhenAnyArgumentIsNegative();
 		shouldSucceedToCreateARational();
 		shouldSucceedToCreateARationalWithNoArgs();
+		shouldPrintWithDecimalPlaces();
 	}
 	
 	public static void shouldThrowEceptionWhenDenominatorIsZero() {
@@ -78,5 +79,23 @@ public class RationalTest {
 		}else {
 			System.out.printf("não passou. A representação string é: %s%n", myNum.toRational());
 		}
+	}
+	
+	public static void shouldPrintWithDecimalPlaces() {
+		int decimalPlaces = 2;
+		int numerator = 8;
+		int denominator = 6;
+		Rational myNum = new Rational(numerator, denominator);
+		
+		System.out.printf("Cria um Rational com numerator == %d e denominator == %d e imprime sua forma decimal com %d casas: ", 
+				numerator, denominator, decimalPlaces);
+		
+		if(myNum.toDecimal(decimalPlaces).equals(1.33)) {
+			System.out.printf("passou. A representação decimal com %d casas decimais é: %s%n", 
+					decimalPlaces, myNum.toDecimal(decimalPlaces));
+		}else {
+			System.out.print("não passou.\n");
+		}
+		
 	}
 }
