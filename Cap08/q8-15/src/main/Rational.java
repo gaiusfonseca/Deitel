@@ -6,7 +6,13 @@ public class Rational {
 	private int denominator;
 	
 	public Rational(int numerator, int denominator) {
-		System.out.println("Hello World");
+		//se o denominador for zero, deve lançar uma ArithmeticException
+		if(denominator == 0) {
+			throw new ArithmeticException("divisão por zero não é permitida.");
+		}
+		
+		this.numerator = numerator / findMDC(numerator, denominator);
+		this.denominator = denominator / findMDC(numerator, denominator);
 	}
 	
 	public Rational() {
@@ -44,6 +50,22 @@ public class Rational {
 	
 	public static Rational divide(Rational num1, Rational num2) {
 		return new Rational();
+	}
+	
+	private int findMDC(int num1, int num2) {
+		int start = 2;
+		int stop = Math.min(num1, num2);
+		int mdc = 1;
+		
+		while(start <= stop) {
+			if(num1 % start == 0 && num2 % start == 0) {
+				mdc *= start;
+			}else {
+				start++;
+			}
+		}
+		
+		return mdc;
 	}
 	
 	public String toRational() {
