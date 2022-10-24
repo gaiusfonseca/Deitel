@@ -11,6 +11,11 @@ public class Rational {
 			throw new ArithmeticException("divisão por zero não é permitida.");
 		}
 		
+		//se um dos números for negativo, deve lançar uma IllegalArgumentException
+		if(numerator < 0 || denominator < 0) {
+			throw new IllegalArgumentException("somente valores positivos são permitidos.");
+		}
+		
 		this.numerator = numerator / findMDC(numerator, denominator);
 		this.denominator = denominator / findMDC(numerator, denominator);
 	}
