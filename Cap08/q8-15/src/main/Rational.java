@@ -21,8 +21,7 @@ public class Rational {
 	}
 	
 	public Rational() {
-		numerator = 1;
-		denominator = 1;
+		this(1,1);
 	}
 	
 	public int getNumerator() {
