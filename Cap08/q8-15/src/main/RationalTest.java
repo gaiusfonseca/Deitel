@@ -7,30 +7,38 @@ public class RationalTest {
 		shouldThrowEceptionWhenDenominatorIsZero();
 		shouldThrowEceptionWhenAnyArgumentIsNegative();
 		shouldSucceedToCreateARational();
+		shouldSucceedToCreateARationalWithNoArgs();
 	}
 	
 	public static void shouldThrowEceptionWhenDenominatorIsZero() {
+		ArithmeticException error = null;
+		
 		System.out.print("Tenta criar um Rational com denominador 0: ");
 		
 		try {
 			Rational myNum = new Rational(12, 0);
 		}catch(ArithmeticException e) {
 			System.out.printf("passou. falhou com a mensagem: %s%n", e.getMessage());
+			error = e;
 		}
 		
-		System.out.print("não passou.\n");
+		if(error == null) {
+			System.out.print("não passou.\n");
+		}
 	}
 	
 	public static void shouldThrowEceptionWhenAnyArgumentIsNegative() {
+		IllegalArgumentException error = null;
+		
 		System.out.print("Tenta criar um Rational com denominador -1: ");
+		
 		
 		try {
 			Rational myNum = new Rational(12, -1);
 		}catch(IllegalArgumentException e) {
 			System.out.printf("passou. falhou com a mensagem: %s%n", e.getMessage());
+			error  = e;
 		}
-		
-		System.out.print("não passou.\n");
 		
 		System.out.print("Tenta criar um Rational com numerator -1: ");
 		
@@ -38,9 +46,12 @@ public class RationalTest {
 			Rational myNum = new Rational(-1, 12);
 		}catch(IllegalArgumentException e) {
 			System.out.printf("passou. falhou com a mensagem: %s%n", e.getMessage());
+			error  = e;
 		}
 		
-		System.out.print("não passou.\n");
+		if(error == null) {
+			System.out.print("não passou.\n");
+		}
 	}
 	
 	public static void shouldSucceedToCreateARational() {
@@ -52,6 +63,18 @@ public class RationalTest {
 		
 		if(myNum.toRational().equals("3/2")) {
 			System.out.printf("passou. A representação string é: %s%n", myNum.toRational());			
+		}else {
+			System.out.printf("não passou. A representação string é: %s%n", myNum.toRational());
+		}
+	}
+	
+	public static void shouldSucceedToCreateARationalWithNoArgs() {
+		System.out.print("Tenta criar um Rational utilizando o construtor sem argumentos: ");
+		
+		Rational myNum = new Rational();
+		
+		if(myNum.toRational().equals("1/1")) {
+			System.out.printf("passou. A representação string é: %s%n", myNum.toRational());
 		}else {
 			System.out.printf("não passou. A representação string é: %s%n", myNum.toRational());
 		}
