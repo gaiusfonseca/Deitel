@@ -74,6 +74,41 @@ public class Rational {
 		return mdc;
 	}
 	
+	public static int findMMC(int num1, int num2) {
+		int start = 2;
+		int mmc = 1;
+		
+		if(num1 == num2) {
+			mmc = num1;
+			return mmc;
+		}
+		
+		if(num1 % num2 == 0 || num2 % num1 == 0) {
+			mmc = Math.max(num1, num2);
+			return mmc;
+		}
+		
+		while(start < num1 || start < num2) {
+			if(num1 % start != 0 && num2 % start != 0) {
+				start++;
+			}
+			
+			if(num1 % start == 0 || num2 % start == 0) {
+				mmc *= start;
+			}
+			
+			if(num1 % start == 0) {
+				num1 /= start;
+			}
+			
+			if(num2 % start == 0) {
+				num2 /= start;
+			}
+		}
+		
+		return mmc;
+	}
+	
 	public String toRational() {
 		return String.format("%d/%d", getNumerator(), getDenominator());
 	}
