@@ -114,6 +114,24 @@ public class Rational {
 	}
 	
 	public String toDecimal(int decimalPlaces) {
-		return String.format("something", null);
+		
+		int integerPart = 1;
+		int decimalPart = 1;
+		int factor = 1;
+		
+		if(decimalPlaces > 9) {
+			throw new IllegalArgumentException("não é possível solicitar mais que 9 casas decimais"
+					+ " pois estoura o limite dos números inteiros");
+		}
+
+		while(decimalPlaces > 0) {
+			factor *= 10;
+			decimalPlaces--;
+		}
+		
+		integerPart = getNumerator() / getDenominator();
+		decimalPart = getNumerator() % getDenominator() * factor / getDenominator();
+		
+		return String.format("%d.%d", integerPart, decimalPart);
 	}
 }
