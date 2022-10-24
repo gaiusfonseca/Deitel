@@ -59,6 +59,8 @@ public class Rational {
 		
 		while(start <= stop) {
 			if(num1 % start == 0 && num2 % start == 0) {
+				num1 = num1 / start;
+				num2 = num2 / start;
 				mdc *= start;
 			}else {
 				start++;
