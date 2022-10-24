@@ -74,7 +74,7 @@ public class Rational {
 		return String.format("%d/%d", getNumerator(), getDenominator());
 	}
 	
-	public String toDecimal() {
+	public String toDecimal(int decimalPlaces) {
 		return String.format("something", null);
 	}
 }
