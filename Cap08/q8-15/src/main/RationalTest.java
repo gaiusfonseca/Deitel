@@ -14,6 +14,7 @@ public class RationalTest {
 		shouldSubtractTwoRationalNumbers();
 		shouldSubtractTwoRationalNumbersWithSameDenominator();
 		shouldMultiplyTwoRationalNumbers();
+		shouldDivideTwoRationalNumbers();
 	}
 	
 	public static void shouldThrowEceptionWhenDenominatorIsZero() {
@@ -166,6 +167,19 @@ public class RationalTest {
 			System.out.print("Tenta multiplicar 2/4 por 3/6: passou\n");
 		}else {
 			System.out.print("Tenta multiplicar 2/4 por 3/6: não passou\n");
+		}
+	}
+	
+	public static void shouldDivideTwoRationalNumbers() {
+		Rational num1 = new Rational(2, 4);
+		Rational num2 = new Rational(3, 6);
+		
+		System.out.printf("%s / %s = %s%n", num1.toRational(), num2.toRational(), Rational.divide(num1, num2).toRational());
+		
+		if(Rational.divide(num1, num2).toRational().equals("1/1")) {
+			System.out.print("Tenta dividir 2/4 por 3/6: passou\n");
+		}else {
+			System.out.print("Tenta dividir 2/4 por 3/6: não passou\n");
 		}
 	}
 }
