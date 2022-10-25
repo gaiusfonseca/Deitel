@@ -10,6 +10,7 @@ public class RationalTest {
 		shouldSucceedToCreateARationalWithNoArgs();
 		shouldPrintWithDecimalPlaces();
 		shouldSumTwoRationalNumbers();
+		shouldSumTwoRationalNumbersWithSameDenominator();
 	}
 	
 	public static void shouldThrowEceptionWhenDenominatorIsZero() {
@@ -110,6 +111,19 @@ public class RationalTest {
 			System.out.print("Tenta somar 1/4 com 2/3: passou\n");
 		}else {
 			System.out.print("Tenta somar 1/4 com 2/3: não passou\n");
+		}
+	}
+	
+	public static void shouldSumTwoRationalNumbersWithSameDenominator() {
+		Rational num1 = new Rational(1, 4);
+		Rational num2 = new Rational(1, 4);
+		
+		System.out.printf("%s + %s = %s%n", num1.toRational(), num2.toRational(), Rational.sum(num1, num2).toRational());
+		
+		if(Rational.sum(num1, num2).toRational().equals("1/2")) {
+			System.out.print("Tenta somar 1/4 com 1/4: passou\n");
+		}else {
+			System.out.print("Tenta somar 1/4 com 1/4: não passou\n");
 		}
 	}
 }
