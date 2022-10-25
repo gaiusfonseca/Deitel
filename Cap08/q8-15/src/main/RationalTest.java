@@ -9,6 +9,7 @@ public class RationalTest {
 		shouldSucceedToCreateARational();
 		shouldSucceedToCreateARationalWithNoArgs();
 		shouldPrintWithDecimalPlaces();
+		shouldSumTwoRationalNumbers();
 	}
 	
 	public static void shouldThrowEceptionWhenDenominatorIsZero() {
@@ -96,7 +97,19 @@ public class RationalTest {
 		}else {
 			System.out.printf("não passou.A representação decimal com %d casas decimais é: %s%n", 
 					decimalPlaces, myNum.toDecimal(decimalPlaces));
-		}
+		}	
+	}
+	
+	public static void shouldSumTwoRationalNumbers() {
+		Rational num1 = new Rational(1, 4);
+		Rational num2 = new Rational(2, 3);
 		
+		System.out.printf("%s + %s = %s%n", num1.toRational(), num2.toRational(), Rational.sum(num1, num2).toRational());
+		
+		if(Rational.sum(num1, num2).toRational().equals("11/12")) {
+			System.out.print("Tenta somar 1/4 com 2/3: passou\n");
+		}else {
+			System.out.print("Tenta somar 1/4 com 2/3: não passou\n");
+		}
 	}
 }
