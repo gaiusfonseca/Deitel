@@ -62,7 +62,24 @@ public class Rational {
 	}
 
 	public static Rational subtraction(Rational num1, Rational num2) {
-		return new Rational();
+		Rational result;
+		int numeratorResult;
+		int denominatorResult;
+		int mmc;
+		
+		if(num1.getDenominator() == num2.getDenominator()) {
+			numeratorResult = num1.getNumerator() - num2.getNumerator();
+			denominatorResult = num1.getDenominator();
+			result = new Rational(numeratorResult, denominatorResult);
+		}else {
+			mmc = findMMC(num1.getDenominator(), num2.getDenominator());
+			denominatorResult = mmc;
+			numeratorResult = mmc / num1.getDenominator() * num1.getNumerator() - 
+							  mmc / num2.getDenominator() * num2.getNumerator();
+			result = new Rational(numeratorResult, denominatorResult);
+		}
+		
+		return result;
 	}
 	
 	public static Rational multiply(Rational num1, Rational num2) {
