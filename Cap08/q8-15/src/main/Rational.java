@@ -83,7 +83,10 @@ public class Rational {
 	}
 	
 	public static Rational multiply(Rational num1, Rational num2) {
-		return new Rational();
+		int numeratorResult = num1.getNumerator() * num2.getNumerator();
+		int denominatorResult = num2.getDenominator() * num2.getDenominator();
+		Rational result = new Rational(numeratorResult, denominatorResult);
+		return result;
 	}
 	
 	public static Rational divide(Rational num1, Rational num2) {
