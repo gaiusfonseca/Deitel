@@ -133,7 +133,7 @@ public class RationalTest {
 		Rational num1 = new Rational(2, 3);
 		Rational num2 = new Rational(1, 4);
 		
-		System.out.printf("%s + %s = %s%n", num1.toRational(), num2.toRational(), Rational.subtraction(num1, num2).toRational());
+		System.out.printf("%s - %s = %s%n", num1.toRational(), num2.toRational(), Rational.subtraction(num1, num2).toRational());
 		
 		if(Rational.subtraction(num1, num2).toRational().equals("5/12")) {
 			System.out.print("Tenta subtrair 1/4 de 2/3: passou\n");
@@ -146,7 +146,7 @@ public class RationalTest {
 		Rational num1 = new Rational(2, 4);
 		Rational num2 = new Rational(1, 4);
 		
-		System.out.printf("%s + %s = %s%n", num1.toRational(), num2.toRational(), Rational.subtraction(num1, num2).toRational());
+		System.out.printf("%s - %s = %s%n", num1.toRational(), num2.toRational(), Rational.subtraction(num1, num2).toRational());
 		
 		if(Rational.subtraction(num1, num2).toRational().equals("1/4")) {
 			System.out.print("Tenta subtrair 1/4 de 2/4: passou\n");
