@@ -90,7 +90,10 @@ public class Rational {
 	}
 	
 	public static Rational divide(Rational num1, Rational num2) {
-		return new Rational();
+		int numeratorResult = num1.getNumerator() * num2.getDenominator();
+		int denominatorResult = num1.getDenominator() * num2.getNumerator();
+		Rational result = new Rational(numeratorResult, denominatorResult);
+		return result;
 	}
 	
 	private int findMDC(int num1, int num2) {
