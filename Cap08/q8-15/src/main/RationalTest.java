@@ -11,6 +11,8 @@ public class RationalTest {
 		shouldPrintWithDecimalPlaces();
 		shouldSumTwoRationalNumbers();
 		shouldSumTwoRationalNumbersWithSameDenominator();
+		shouldSubtractTwoRationalNumbers();
+		shouldSubtractTwoRationalNumbersWithSameDenominator();
 	}
 	
 	public static void shouldThrowEceptionWhenDenominatorIsZero() {
@@ -137,6 +139,19 @@ public class RationalTest {
 			System.out.print("Tenta subtrair 1/4 de 2/3: passou\n");
 		}else {
 			System.out.print("Tenta somar 1/4 de 2/3: não passou\n");
+		}
+	}
+	
+	public static void shouldSubtractTwoRationalNumbersWithSameDenominator() {
+		Rational num1 = new Rational(2, 4);
+		Rational num2 = new Rational(1, 4);
+		
+		System.out.printf("%s + %s = %s%n", num1.toRational(), num2.toRational(), Rational.subtraction(num1, num2).toRational());
+		
+		if(Rational.subtraction(num1, num2).toRational().equals("1/4")) {
+			System.out.print("Tenta subtrair 1/4 de 2/4: passou\n");
+		}else {
+			System.out.print("Tenta somar 1/4 de 2/4: não passou\n");
 		}
 	}
 }
