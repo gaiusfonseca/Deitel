@@ -24,6 +24,14 @@ public class HugeInteger {
 		}
 	}
 	
+	public int[] getNumber() {
+		return number;
+	}
+	
+	public void setNumber(int[] value) {
+		number = value;
+	}
+	
 	public HugeInteger add(HugeInteger value) {
 		return new HugeInteger();
 	}
