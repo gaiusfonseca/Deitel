@@ -10,18 +10,21 @@ public class HugeInteger {
 		Arrays.fill(number, 0);
 	}
 	
-	public void parse(String value) {
+	public int[] parse(String value) {
 		int length = value.length();
+		int[] temp = new int[40];
 		
 		if(length >= 40) {
 			throw new IllegalArgumentException("Não é possível armazenar um número com mais de 40 dígitos.");
 		}
 		
-		Arrays.fill(number, 0);
+		Arrays.fill(temp, 0);
 		
 		for(int i = length - 1; i >= 0; i--) {
-			number[i] = value.charAt(length - 1 - i);
+			temp[i] = value.charAt(length - 1 - i);
 		}
+		
+		return temp;
 	}
 	
 	public int[] getNumber() {
