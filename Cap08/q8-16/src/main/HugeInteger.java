@@ -11,7 +11,13 @@ public class HugeInteger {
 	}
 	
 	public void parse(String value) {
+		int length = value.length();
 		
+		Arrays.fill(number, 0);
+		
+		for(int i = length - 1; i >= 0; i--) {
+			number[i] = value.charAt(length - 1 - i);
+		}
 	}
 	
 	public HugeInteger add(HugeInteger value) {
