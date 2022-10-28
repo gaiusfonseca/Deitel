@@ -10,7 +10,7 @@ public class HugeInteger {
 		Arrays.fill(number, 0);
 	}
 	
-	public int[] parse(String value) {
+	public static int[] parse(String value) {
 		int length = value.length();
 		int[] number = new int[40];
 		
