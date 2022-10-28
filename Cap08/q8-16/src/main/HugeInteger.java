@@ -12,19 +12,19 @@ public class HugeInteger {
 	
 	public int[] parse(String value) {
 		int length = value.length();
-		int[] temp = new int[40];
+		int[] number = new int[40];
 		
-		if(length >= 40) {
+		if(length > 40) {
 			throw new IllegalArgumentException("Não é possível armazenar um número com mais de 40 dígitos.");
 		}
 		
-		Arrays.fill(temp, 0);
+		Arrays.fill(number, 0);
 		
 		for(int i = length - 1; i >= 0; i--) {
-			temp[i] = value.charAt(length - 1 - i);
+			number[i] = value.charAt(length - 1 - i);
 		}
 		
-		return temp;
+		return number;
 	}
 	
 	public int[] getNumber() {
@@ -32,6 +32,10 @@ public class HugeInteger {
 	}
 	
 	public void setNumber(int[] value) {
+		if(value.length > 40) {
+			throw new IllegalArgumentException("Não é possível armazenar um número com mais de 40 dígitos.");
+		}
+		
 		number = value;
 	}
 	
