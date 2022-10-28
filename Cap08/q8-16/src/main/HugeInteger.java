@@ -13,6 +13,10 @@ public class HugeInteger {
 	public void parse(String value) {
 		int length = value.length();
 		
+		if(length >= 40) {
+			throw new IllegalArgumentException("Não é possível armazenar um número com mais de 40 dígitos.");
+		}
+		
 		Arrays.fill(number, 0);
 		
 		for(int i = length - 1; i >= 0; i--) {
