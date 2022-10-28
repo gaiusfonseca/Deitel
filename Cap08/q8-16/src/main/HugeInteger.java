@@ -86,6 +86,14 @@ public class HugeInteger {
 		
 	}
 	
+	public void showValue() {
+		System.out.print("Number value: ");
+		for(int digit : getNumber()) {
+			System.out.print(digit);
+		}
+		System.out.println("\n");
+	}
+	
 	@Override
 	public String toString() {
 		return "number to String";
