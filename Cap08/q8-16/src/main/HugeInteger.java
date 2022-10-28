@@ -73,9 +73,10 @@ public class HugeInteger {
 	
 	public boolean isZero() {
 		int total = 0;
+		int[] value = getNumber();
 		
 		for(int i = 0; i < 40; i++) {
-			total += number[i];
+			total += value[i];
 		}
 		
 		if(total == 0) {
