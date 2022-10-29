@@ -23,6 +23,12 @@ public class HugeInteger {
 			throw new IllegalArgumentException("Não é possível armazenar um número com mais de 40 dígitos.");
 		}
 		
+		for(int i = 0; i < value.length(); i++) {
+			if(!Character.isDigit(value.charAt(i))) {
+				throw new IllegalArgumentException("a String fornecida não é um número decimal.");
+			}
+		}
+		
 		for(int i = SIZE - length; i < SIZE; i++) {
 			number[i] = Character.getNumericValue(value.charAt(length - (SIZE - i)));
 		}
@@ -35,16 +41,6 @@ public class HugeInteger {
 	}
 	
 	public void setNumber(String value) {
-		if(value.length() > SIZE) {
-			throw new IllegalArgumentException("Não é possível armazenar um número com mais de 40 dígitos.");
-		}
-		
-		for(int i = 0; i < value.length(); i++) {
-			if(!Character.isDigit(value.charAt(i))) {
-				throw new IllegalArgumentException("a String fornecida não é um número decimal.");
-			}
-		}
-		
 		number = parse(value);
 	}
 	
