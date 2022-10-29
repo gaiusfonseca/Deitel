@@ -102,6 +102,10 @@ public class HugeInteger {
 	
 	@Override
 	public String toString() {
-		return "number to String";
+		StringBuilder sb = new StringBuilder();
+		for(int x : getNumber()) {
+			sb.append(x);
+		}
+		return sb.toString();
 	}
 }
