@@ -45,6 +45,26 @@ public class HugeInteger {
 	}
 	
 	public HugeInteger add(HugeInteger value) {
+		int next = 0;
+		int result = 0;
+		int[] temp = new int[SIZE];
+		
+		for(int i = SIZE - 1; i > 0; i--) {
+			if(getNumber()[i] + value.getNumber()[i] >= 10) {
+				next = 1;
+				result = getNumber()[i] + value.getNumber()[i] - 10;
+			}else if(next == 1){
+				next = 0;
+				result = getNumber()[i] + value.getNumber()[i] + 1;
+			}else {
+				next = 0;
+				result = getNumber()[i] + value.getNumber()[i];
+			}
+			
+			temp[i] = result;
+		}
+		
+		
 		return new HugeInteger();
 	}
 	
