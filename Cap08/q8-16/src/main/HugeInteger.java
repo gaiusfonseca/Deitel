@@ -45,27 +45,23 @@ public class HugeInteger {
 	}
 	
 	public HugeInteger add(HugeInteger value) {
+		int[] results = new int[SIZE];
 		int next = 0;
-		int result = 0;
-		int[] temp = new int[SIZE];
 		
 		for(int i = SIZE - 1; i > 0; i--) {
-			if(getNumber()[i] + value.getNumber()[i] >= 10) {
+			if(i == 0 && getNumber()[i] + value.getNumber()[i] >= 10 || i == 0 && getNumber()[i] + value.getNumber()[i] + next >= 10) {
+				throw new IllegalArgumentException("a soma dos números resultaria em um número com mais de 40 dígitos");
+			}else if(getNumber()[i] + value.getNumber()[i] >= 10) {
 				next = 1;
-				result = getNumber()[i] + value.getNumber()[i] - 10;
-			}else if(next == 1){
-				next = 0;
-				result = getNumber()[i] + value.getNumber()[i] + 1;
+				results[i] = getNumber()[i] + value.getNumber()[i] - 10;
+			}else if(next == 1) {
+				results[i] = getNumber()[i] + value.getNumber()[i] + 1;
 			}else {
-				next = 0;
-				result = getNumber()[i] + value.getNumber()[i];
+				results[i] = getNumber()[i] + value.getNumber()[i];
 			}
-			
-			temp[i] = result;
 		}
 		
-		
-		return new HugeInteger();
+		return new HugeInteger(results.toString());
 	}
 	
 	public HugeInteger subtract(HugeInteger value) {
