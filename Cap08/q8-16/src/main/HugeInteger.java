@@ -85,11 +85,11 @@ public class HugeInteger {
 	}
 	
 	public boolean isGreaterThanOrEqualTo(HugeInteger value) {
-		return false;
+		return !isLessThan(value);
 	}
 	
 	public boolean isLessThanOrEqualTo(HugeInteger value) {
-		return false;
+		return !isGreaterThan(value);
 	}
 	
 	public boolean isZero() {
