@@ -10,6 +10,10 @@ public class HugeInteger {
 		Arrays.fill(number, 0);
 	}
 	
+	public HugeInteger(String value) {
+		number = parse(value);
+	}
+	
 	public static int[] parse(String value) {
 		int length = value.length();
 		final int SIZE = 40;
@@ -61,6 +65,12 @@ public class HugeInteger {
 	}
 	
 	public boolean isGreaterThan(HugeInteger value) {
+		for(int i = 0; i < 40; i++) {
+			if(getNumber()[i] > value.getNumber()[i]) {
+				return true;
+			}
+		}
+	
 		return false;
 	}
 	
