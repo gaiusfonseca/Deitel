@@ -4,7 +4,8 @@ import java.util.Arrays;
 
 public class HugeInteger {
 
-	private int[] number = new int[40];
+	private final static int SIZE = 40;
+	private int[] number = new int[SIZE];
 	
 	public HugeInteger() {
 		Arrays.fill(number, 0);
@@ -16,14 +17,11 @@ public class HugeInteger {
 	
 	public static int[] parse(String value) {
 		int length = value.length();
-		final int SIZE = 40;
 		int[] number = new int[SIZE];
 		
 		if(length > SIZE) {
 			throw new IllegalArgumentException("Não é possível armazenar um número com mais de 40 dígitos.");
 		}
-		
-		Arrays.fill(number, 0);
 		
 		for(int i = SIZE - length; i < SIZE; i++) {
 			number[i] = Character.getNumericValue(value.charAt(length - (SIZE - i)));
@@ -36,12 +34,18 @@ public class HugeInteger {
 		return number;
 	}
 	
-	public void setNumber(int[] value) {
-		if(value.length > 40) {
+	public void setNumber(String value) {
+		if(value.length() > SIZE) {
 			throw new IllegalArgumentException("Não é possível armazenar um número com mais de 40 dígitos.");
 		}
 		
-		number = value;
+		for(int i = 0; i < value.length(); i++) {
+			if(!Character.isDigit(value.charAt(i))) {
+				throw new IllegalArgumentException("a String fornecida não é um número decimal.");
+			}
+		}
+		
+		number = parse(value);
 	}
 	
 	public HugeInteger add(HugeInteger value) {
