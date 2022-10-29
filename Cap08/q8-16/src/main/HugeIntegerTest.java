@@ -113,5 +113,19 @@ public class HugeIntegerTest {
 		
 		test = number1.isZero();
 		System.out.printf("number1: %s == 0 ? %b%n", number1.toString(), test);
+		
+		System.out.println("ajusta o valor de number1 e number2 de modo que a soma seja um número com mais de 40 dígitos");
+		number1.setNumber("9999999999999999999999999999999999999999");
+		number2.setNumber("0000000000000000000000000000000000000001");
+		try {
+			System.out.printf("%s + %s == %s", number1.toString(), number2.toString(), number1.add(number2).toString());
+		}catch(IllegalArgumentException e) {
+			System.err.println(e.getMessage());
+		}
+		
+		System.out.println("ajusta o valor de number1 e number2 de modo que a soma seja um número com até 40 dígitos");
+		number1.setNumber("0000000000000000000050000000000000000000");
+		number2.setNumber("0000000000000000000050000000000000000000");
+		System.out.printf("%s + %s == %s", number1.toString(), number2.toString(), number1.add(number2).toString());
 	}
 }
