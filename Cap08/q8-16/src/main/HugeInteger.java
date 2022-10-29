@@ -49,7 +49,7 @@ public class HugeInteger {
 	}
 	
 	public boolean isEqualTo(HugeInteger value) {
-		if(number.equals(value.getNumber())) {
+		if(Arrays.equals(number, value.getNumber())) {
 			return true;
 		}
 		
