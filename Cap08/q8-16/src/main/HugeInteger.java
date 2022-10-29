@@ -12,16 +12,17 @@ public class HugeInteger {
 	
 	public static int[] parse(String value) {
 		int length = value.length();
-		int[] number = new int[40];
+		final int SIZE = 40;
+		int[] number = new int[SIZE];
 		
-		if(length > 40) {
+		if(length > SIZE) {
 			throw new IllegalArgumentException("Não é possível armazenar um número com mais de 40 dígitos.");
 		}
 		
 		Arrays.fill(number, 0);
 		
-		for(int i = length - 1; i >= 0; i--) {
-			number[i] = value.charAt(length - 1 - i);
+		for(int i = SIZE - length; i < SIZE; i++) {
+			number[i] = Character.getNumericValue(value.charAt(length - (SIZE - i)));
 		}
 		
 		return number;
