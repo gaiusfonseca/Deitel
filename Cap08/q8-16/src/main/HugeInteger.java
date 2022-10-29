@@ -55,7 +55,8 @@ public class HugeInteger {
 				next = 1;
 				results[i] = getNumber()[i] + value.getNumber()[i] - 10;
 			}else if(next == 1) {
-				results[i] = getNumber()[i] + value.getNumber()[i] + 1;
+				results[i] = getNumber()[i] + value.getNumber()[i] + next;
+				next = 0;
 			}else {
 				results[i] = getNumber()[i] + value.getNumber()[i];
 			}
