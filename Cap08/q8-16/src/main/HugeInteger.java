@@ -57,7 +57,7 @@ public class HugeInteger {
 	}
 	
 	public boolean isNotEqualTo(HugeInteger value) {
-		return false;
+		return !isEqualTo(value);
 	}
 	
 	public boolean isGreaterThan(HugeInteger value) {
