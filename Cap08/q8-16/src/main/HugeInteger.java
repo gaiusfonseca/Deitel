@@ -47,14 +47,18 @@ public class HugeInteger {
 	public HugeInteger add(HugeInteger value) {
 		int[] results = new int[SIZE];
 		int next = 0;
+		StringBuilder sb = new StringBuilder();
 		
-		for(int i = SIZE - 1; i > 0; i--) {
-			if(i == 0 && getNumber()[i] + value.getNumber()[i] >= 10 || i == 0 && getNumber()[i] + value.getNumber()[i] + next >= 10) {
+		for(int i = SIZE - 1; i >= 0; i--) {
+			if((i == 0 && getNumber()[i] + value.getNumber()[i] >= 10) || (i == 0 && getNumber()[i] + value.getNumber()[i] + next >= 10)) {
 				throw new IllegalArgumentException("a soma dos números resultaria em um número com mais de 40 dígitos");
 			}else if(getNumber()[i] + value.getNumber()[i] >= 10) {
 				next = 1;
 				results[i] = getNumber()[i] + value.getNumber()[i] - 10;
-			}else if(next == 1) {
+			}else if(getNumber()[i] + value.getNumber()[i] + next >= 10) {
+				results[i] = getNumber()[i] + value.getNumber()[i] + next - 10;
+				next = 1;
+			}else if(next == 1){
 				results[i] = getNumber()[i] + value.getNumber()[i] + next;
 				next = 0;
 			}else {
@@ -62,7 +66,11 @@ public class HugeInteger {
 			}
 		}
 		
-		return new HugeInteger(results.toString());
+		for(int x : results) {
+			sb.append(x);
+		}
+		
+		return new HugeInteger(sb.toString());
 	}
 	
 	public HugeInteger subtract(HugeInteger value) {
