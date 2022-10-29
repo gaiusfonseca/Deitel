@@ -5,61 +5,113 @@ import java.util.Scanner;
 public class HugeIntegerTest {
 	
 	public static void main(String[] args) {
-		Scanner input = new Scanner(System.in);
-		int size = 40;
-		int[] numberFromString = new int[size];
+		HugeInteger number1;
+		HugeInteger number2;
+		boolean test = false;
 		
-		System.out.println("Cria um HugeInteger com o construtor padrão");
-		HugeInteger number = new HugeInteger();
+		System.out.println("Testa o construtor sem argumentos.");
+		number1 = new HugeInteger();
+		System.out.printf("number1: %s%n", number1.toString());
 		
-		number.showValue();
+		System.out.println("Testa o construtor com argumento.");
+		number2 = new HugeInteger("1000");
+		System.out.printf("number2: %s%n", number2.toString());
 		
-		System.out.print("Informe um número com até 40 caracteres: ");
-		if(input.hasNext()) {
-			numberFromString = HugeInteger.parse(input.next());
-			number.setNumber(numberFromString);
-			number.showValue();
+		System.out.println("Tenta definir o valor de number2 com uma string que não é um número.");
+		try {
+			number2.setNumber("1000A");
+		}catch(IllegalArgumentException e) {
+			System.err.println(e.getMessage());
 		}
 		
-		System.out.println("cria um novo array com o valor 100 e verifica se ele é igual a 'number'.\n");
-		HugeInteger number2 = new HugeInteger();
-		number2.setNumber(numberFromString);
-		if(number2.isEqualTo(number)) {
-			System.out.println("os arrays são iguais.");
-			System.out.printf("number: %s%n", number.toString());
-			System.out.printf("number2: %s%n", number2.toString());
-		}else {
-			System.out.println("os arrays não são iguais.");
-			System.out.printf("number: %s%n", number.toString());
-			System.out.printf("number2: %s%n", number2.toString());
+		System.out.println("Tenta definir o valor de number2 para um número com mais de 40 dígitos.");
+		try {
+			number2.setNumber("99999999999999999999999999999999999999999999999999999999999999999999");
+		}catch(IllegalArgumentException e) {
+			System.err.println(e.getMessage());
 		}
 		
-		System.out.println("\naltera 'number2' para 2000 e verifica se ele é igual a 'number'.");
-		numberFromString = HugeInteger.parse("2000");
-		number2.setNumber(numberFromString);
-		if(number2.isNotEqualTo(number)) {
-			System.out.println("os arrays não são iguais.");
-			System.out.printf("number: %s%n", number.toString());
-			System.out.printf("number2: %s%n", number2.toString());
-		}else {
-			System.out.println("os arrays são iguais.");
-			System.out.printf("number: %s%n", number.toString());
-			System.out.printf("number2: %s%n", number2.toString());
-		}
+		System.out.println("define number1 e number2 para 5000 e inicia os testes");
+		number1.setNumber("5000");
+		number2.setNumber("5000");
+		test = number1.isEqualTo(number2);
+		System.out.printf("%s == %s ? %b%n", number1.toString(), number2.toString(), test);
 		
-		System.out.println("\ncompara number2 > number.");
-		if(number2.isGreaterThan(number)) {
-			System.out.println("number2 > number1");
-		}else {
-			System.out.println("number2 <= number1");
-		}
+		System.out.println("define number2 para 6000 e repete o teste");
+		number1.setNumber("5000");
+		number2.setNumber("6000");
+		test = number1.isEqualTo(number2);
+		System.out.printf("%s == %s ? %b%n", number1.toString(), number2.toString(), test);
 		
-		System.out.println("\naltera number para 2500 e repete o teste");
-		number = new HugeInteger("2500");
-		if(number2.isGreaterThan(number)) {
-			System.out.println("number2 > number1");
-		}else {
-			System.out.println("number2 <= number1");
-		}
+		System.out.println("testa o método isNotEqual");
+		test = number1.isNotEqualTo(number2);
+		System.out.printf("%s != %s ? %b%n", number1.toString(), number2.toString(), test);
+		
+		System.out.println("define number1 para 6000 e testa novamente isNotEqualTo");
+		number1.setNumber("6000");
+		test = number1.isNotEqualTo(number2);
+		System.out.printf("%s != %s ? %b%n", number1.toString(), number2.toString(), test);
+		
+		System.out.println("define number1 para 7000 e testa isGreaterThan");
+		number1.setNumber("7000");
+		
+		test = number1.isGreaterThan(number2);
+		System.out.printf("number1: %s > number2: %s ? %b%n", number1.toString(), number2.toString(), test);
+		
+		test = number2.isGreaterThan(number1);
+		System.out.printf("number2: %s > number1: %s ? %b%n", number2.toString(), number1.toString(), test);
+		
+		System.out.println("testa isLessThan");
+		
+		test = number1.isLessThan(number2);
+		System.out.printf("number1: %s < number2: %s ? %b%n", number1.toString(), number2.toString(), test);
+		
+		test = number2.isLessThan(number1);
+		System.out.printf("number2: %s < number1: %s ? %b%n", number2.toString(), number1.toString(), test);
+		
+		System.out.println("testa isLessThanOrEqualTo");
+		
+		test = number1.isLessThanOrEqualTo(number2);
+		System.out.printf("number1: %s <= number2: %s ? %b%n", number1.toString(), number2.toString(), test);
+		
+		test = number2.isLessThanOrEqualTo(number1);
+		System.out.printf("number2: %s <= number1: %s ? %b%n", number2.toString(), number1.toString(), test);
+		
+		System.out.println("atribui 7000 a number2 e testa novamente isLessThanOrEqualTo");
+		number2.setNumber("7000");
+		
+		test = number1.isLessThanOrEqualTo(number2);
+		System.out.printf("number1: %s <= number2: %s ? %b%n", number1.toString(), number2.toString(), test);
+		
+		test = number2.isLessThanOrEqualTo(number1);
+		System.out.printf("number2: %s <= number1: %s ? %b%n", number2.toString(), number1.toString(), test);
+		
+		System.out.println("testa isGreaterThanOrEqualTo");
+		
+		test = number1.isGreaterThanOrEqualTo(number2);
+		System.out.printf("number1: %s >= number2: %s ? %b%n", number1.toString(), number2.toString(), test);
+		
+		test = number2.isGreaterThanOrEqualTo(number1);
+		System.out.printf("number2: %s >= number1: %s ? %b%n", number2.toString(), number1.toString(), test);
+		
+		System.out.println("atribui 8000 a number1 e testa novamente isGreaterThanOrEqualTo");
+		number1.setNumber("8000");
+		
+		test = number1.isGreaterThanOrEqualTo(number2);
+		System.out.printf("number1: %s >= number2: %s ? %b%n", number1.toString(), number2.toString(), test);
+		
+		test = number2.isGreaterThanOrEqualTo(number1);
+		System.out.printf("number2: %s >= number1: %s ? %b%n", number2.toString(), number1.toString(), test);
+		
+		System.out.println("testa isZero");
+		
+		test = number1.isZero();
+		System.out.printf("number1: %s == 0 ? %b%n", number1.toString(), test);
+		
+		System.out.println("altera o valor de number1 para zero e testa novamente");
+		number1.setNumber("0");
+		
+		test = number1.isZero();
+		System.out.printf("number1: %s == 0 ? %b%n", number1.toString(), test);
 	}
 }
