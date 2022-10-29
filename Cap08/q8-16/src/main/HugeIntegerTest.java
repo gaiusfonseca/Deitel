@@ -34,5 +34,17 @@ public class HugeIntegerTest {
 			System.out.printf("number2: %s%n", number2.toString());
 		}
 		
+		System.out.println("\naltera 'number2' para 2000 e verifica se ele é igual a 'number'.");
+		numberFromString = HugeInteger.parse("2000");
+		number2.setNumber(numberFromString);
+		if(number2.isNotEqualTo(number)) {
+			System.out.println("os arrays não são iguais.");
+			System.out.printf("number: %s%n", number.toString());
+			System.out.printf("number2: %s%n", number2.toString());
+		}else {
+			System.out.println("os arrays são iguais.");
+			System.out.printf("number: %s%n", number.toString());
+			System.out.printf("number2: %s%n", number2.toString());
+		}
 	}
 }
