@@ -65,7 +65,7 @@ public class HugeInteger {
 	}
 	
 	public boolean isGreaterThan(HugeInteger value) {
-		for(int i = 0; i < 40; i++) {
+		for(int i = 0; i < getNumber().length; i++) {
 			if(getNumber()[i] > value.getNumber()[i]) {
 				return true;
 			}
@@ -75,6 +75,12 @@ public class HugeInteger {
 	}
 	
 	public boolean isLessThan(HugeInteger value) {
+		for(int i = 0; i < getNumber().length; i++) {
+			if(getNumber()[i] < value.getNumber()[i]) {
+				return true;
+			}
+		}
+		
 		return false;
 	}
 	
