@@ -46,5 +46,20 @@ public class HugeIntegerTest {
 			System.out.printf("number: %s%n", number.toString());
 			System.out.printf("number2: %s%n", number2.toString());
 		}
+		
+		System.out.println("\ncompara number2 > number.");
+		if(number2.isGreaterThan(number)) {
+			System.out.println("number2 > number1");
+		}else {
+			System.out.println("number2 <= number1");
+		}
+		
+		System.out.println("\naltera number para 2500 e repete o teste");
+		number = new HugeInteger("2500");
+		if(number2.isGreaterThan(number)) {
+			System.out.println("number2 > number1");
+		}else {
+			System.out.println("number2 <= number1");
+		}
 	}
 }
