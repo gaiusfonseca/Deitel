@@ -49,6 +49,10 @@ public class HugeInteger {
 	}
 	
 	public boolean isEqualTo(HugeInteger value) {
+		if(number.equals(value.getNumber())) {
+			return true;
+		}
+		
 		return false;
 	}
 	
